@@ -1,0 +1,135 @@
+body {
+  width: 960px;
+  margin: 0 auto;
+  background-image: -webkit-linear-gradient(top, #aaa, #fff);
+  background-image: -moz-linear-gradient(top, #aaa, #fff);
+  background-image: -ms-linear-gradient(top, #aaa, #fff);
+  background-image: -o-linear-gradient(top, #aaa, #fff);
+  background-image: linear-gradient(to bottom, #aaa, #fff);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaa', endColorstr='#fff',GradientType=0 );
+  background-repeat: no-repeat;
+  font-family: Tahoma, sans-serif;
+  color: #aaa; }
+  body #wrapper {
+    width: 75%;
+    margin: 0 auto;
+    background-color: white;
+    border: 3px solid #ccc;
+    padding: 15px;
+    text-align: center; }
+    body #wrapper header {
+      border: 3px solid #ccc;
+      margin-bottom: 10px; }
+      body #wrapper header h1 {
+        margin: 10px 0; }
+      body #wrapper header ul {
+        padding: 0;
+        list-style-type: none; }
+        body #wrapper header ul li {
+          display: inline-block;
+          margin: 0 20px;
+          border: 3px solid #ccc; }
+          body #wrapper header ul li a {
+            font-size: 12px;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #bbb;
+            display: block; }
+          body #wrapper header ul li:hover a {
+            background-image: -webkit-linear-gradient(top, #aaa, #fff);
+            background-image: -moz-linear-gradient(top, #aaa, #fff);
+            background-image: -ms-linear-gradient(top, #aaa, #fff);
+            background-image: -o-linear-gradient(top, #aaa, #fff);
+            background-image: linear-gradient(to bottom, #aaa, #fff);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaa', endColorstr='#fff',GradientType=0 );
+            background-repeat: no-repeat;
+            color: white; }
+    body #wrapper section, body #wrapper section article {
+      border: 3px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px; }
+      body #wrapper section #linear, body #wrapper section #radial {
+        margin: 0;
+        padding: 0;
+        border: none;
+        font-size: 12px;
+        text-decoration: underline; }
+      body #wrapper section article .innerContainer {
+        font-size: 0; }
+        body #wrapper section article .innerContainer div {
+          width: 180px;
+          height: 180px;
+          border-radius: 15px;
+          display: inline-block; }
+    body #wrapper .linear {
+      font-size: 10px; }
+      body #wrapper .linear article {
+        border: 1px solid #bbb; }
+        body #wrapper .linear article:nth-child(2) .purple {
+          background: linear-gradient(to bottom, purple, #fff); }
+        body #wrapper .linear article:nth-child(2) .blue {
+          background: linear-gradient(to bottom, blue, #fff); }
+        body #wrapper .linear article:nth-child(2) .green {
+          background: linear-gradient(to bottom, green, #fff); }
+        body #wrapper .linear article:nth-child(2) .yellow {
+          background: linear-gradient(to bottom, yellow, #fff); }
+        body #wrapper .linear article:nth-child(2) .orange {
+          background: linear-gradient(to bottom, orange, #fff); }
+        body #wrapper .linear article:nth-child(2) .red {
+          background: linear-gradient(to bottom, red, #fff); }
+        body #wrapper .linear article:nth-child(3) .purple {
+          background: linear-gradient(to right, purple, #fff); }
+        body #wrapper .linear article:nth-child(3) .blue {
+          background: linear-gradient(to right, blue, #fff); }
+        body #wrapper .linear article:nth-child(3) .green {
+          background: linear-gradient(to right, green, #fff); }
+        body #wrapper .linear article:nth-child(3) .yellow {
+          background: linear-gradient(to right, yellow, #fff); }
+        body #wrapper .linear article:nth-child(3) .orange {
+          background: linear-gradient(to right, orange, #fff); }
+        body #wrapper .linear article:nth-child(3) .red {
+          background: linear-gradient(to right, red, #fff); }
+        body #wrapper .linear article:nth-child(4) .purple {
+          background: linear-gradient(to right bottom, purple, #fff); }
+        body #wrapper .linear article:nth-child(4) .blue {
+          background: linear-gradient(to right bottom, blue, #fff); }
+        body #wrapper .linear article:nth-child(4) .green {
+          background: linear-gradient(to right bottom, green, #fff); }
+        body #wrapper .linear article:nth-child(4) .yellow {
+          background: linear-gradient(to right bottom, yellow, #fff); }
+        body #wrapper .linear article:nth-child(4) .orange {
+          background: linear-gradient(to right bottom, orange, #fff); }
+        body #wrapper .linear article:nth-child(4) .red {
+          background: linear-gradient(to right bottom, red, #fff); }
+    body #wrapper .radial {
+      font-size: 10px; }
+      body #wrapper .radial article .purple {
+        background: radial-gradient(purple, #fff); }
+      body #wrapper .radial article .blue {
+        background: radial-gradient(blue, #fff); }
+      body #wrapper .radial article .green {
+        background: radial-gradient(green, #fff); }
+      body #wrapper .radial article .yellow {
+        background: radial-gradient(yellow, #fff); }
+      body #wrapper .radial article .orange {
+        background: radial-gradient(orange, #fff); }
+      body #wrapper .radial article .red {
+        background: radial-gradient(red, #fff); }
+    body #wrapper footer {
+      border: 3px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px; }
+      body #wrapper footer h3 {
+        font-size: 18px;
+        font-weight: 900;
+        text-decoration: underline; }
+      body #wrapper footer ul {
+        padding: 0;
+        list-style-type: none; }
+        body #wrapper footer ul a {
+          text-decoration: none;
+          color: #aaa;
+          font-size: 12px; }
+
+/*# sourceMappingURL=Scss1.css.map */

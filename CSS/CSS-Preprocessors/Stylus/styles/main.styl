@@ -1,0 +1,63 @@
+bg-color=#DDDDDD
+reset()
+	margin 0
+	padding 0
+	border 0
+brd()
+	border 1px solid black
+dimensons(wid,heig)
+	width wid
+	height heig
+	
+	
+body
+form
+fieldset
+input
+label
+img 
+	reset()
+	font-family Arial Sans-serif
+	font-size 16px
+body
+	background-color bg-color
+	padding 5px
+	form
+		margin auto
+		width 940px
+		fieldset
+			position relative
+			border-radius 10px
+			text-align center
+			brd()
+			legend
+				font-size 1.2em
+			label
+				dimensons(150px,150px)
+			img
+				&:first-of-type
+					dimensons(150px,150px)
+				&:last-of-type
+					position absolute
+					top 190px
+					dimensons(450px,450px)
+					brd()
+					display none
+			input[type="radio"]
+				display none
+				&:checked + label img:last-of-type				
+					display block
+									
+
+
+
+							
+				
+		    
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+
+body{
+    font-family:Consolas;
+    color: #0094ff;
+	font-size:18px;
+}
+div{
+    width:960px;
+	margin:10% auto;
+}
+p:first-letter{
+    font-family:Edwardian Script ITC;
+	font-size:2.4em;
+}
+p:first-line{
+    line-height:1.5;
+	font-weight:bold;
+}

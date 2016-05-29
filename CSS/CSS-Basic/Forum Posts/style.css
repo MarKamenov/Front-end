@@ -1,0 +1,44 @@
+
+body{
+    background-color: #a9a9a9;
+	width:800px;
+	margin:30px auto;
+	}
+h1{
+    color:#fafad2;
+}
+body > header, section+footer{
+    text-align:center;
+	font-size:17px;
+}
+nav ul{
+    list-style-type:none
+}
+a{
+    text-decoration:none;
+}
+ul li a {
+    height:25px;
+    line-height:25px;
+	font-size:20px;
+    color:#F5F4ED;
+	font-weight: bold;
+}
+nav ul li a.current {
+    background-color:#d3d3d3;
+}
+nav ul li:last-child a {
+    text-decoration: underline;
+}
+p{
+text-align:justify;
+}
+footer p{
+font-size:12px;
+}
+footer p a{
+color:#000;
+}
+section+footer{
+font-weight:normal;
+}
