@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Spa my try</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="#/">Home</a>
+            </li>
+            <li>
+                <a href="#/items">Items Details</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="content"></div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/sammy/lib/sammy.js"></script>
+    <script src="bower_components/handlebars/handlebars.js"></script>
+    <script src="db.js"></script>
+    <script src="tmplLoader.js"></script>
+    <script>
+    var sammyApp = Sammy('#content', function() {
+        this.get('#/', function() {
+            this.redirect('#/home');
+        });
+        this.get('#/home', function() {
+            $('#content').html('<h1>Home page</h1>');
+        });
+        this.get('#/items', function() {
+            var list;
+            data.get('/api/items')
+                .then(function(data) {
+                    list = data;
+                    return templates.get('items')
+                }).then(function(html) {
+                    var template = Handlebars.compile(html);
+                    $('#content').html(template({
+                        items: list
+                    }));
+
+                });
+        });
+        this.get('#/items/:id', function() {
+            var item;
+            var id = this.params.id;
+            Promise.all([data.getById(id),
+                    templates.get('item-details')
+                ])
+                .then(function(results) {
+                    var template = Handlebars.compile(results[1]);
+                    $('#content').html(template(results[0].result));
+                });
+            /* data.getById(id)
+             .then(function(data){
+                 item = data.result;
+               return templates.get('item-details')
+               .then(function(tmpl){
+                 var template = Handlebars.compile(tmpl);
+                 $('#content').html(template(item));
+               });
+             });*/
+        });
+    });
+    $(function() {
+        sammyApp.run('#/')
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+ <!--The Ship game
+
+Task description
+
+The computer generates a random number with four different digits
+The leftmost digit must not be 0 (zero)
+For simplicity called abcd
+At each turn the player enters a four-digit number
+For simplicity called xyzw
+Implement a high-score list
+Sheep means that a digit from xyzw is contained in abcd, but not on the same position
+If two such digits exists, the sheep are 2
+Ram means that a digit from xyzw is contained in abcd and it is on the same position * If two such digits exists, the rams are 2
+The game continues until the player guesses the number abcd
+i.e. has 4 rams
+Task implementation
+
+Your task is to create an object, that has 3 methods:
+
+init(playerName, endCallback)
+Starts a new game
+Generates a new number
+playerName is the name of the player in the high-score
+endCallback is a function that must be called when the game ends (the player wins)
+It is called after the high-score is updated
+guess(number)
+Available only after init() is invoked
+Should throw otherwise
+The player makes a guess agains the number
+Returns as a result an object in the format:
+{ sheep: 3, rams: 1 }
+getHighScore(count)
+Returns the top count players of the high-score
+If count is greater than the total count of players in the high-score, return the actual number of player in the high-score
+The returned players are returned in an array, where each player is in the format:
+{name: 'Sheep master', score: 5}*/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Sheep game</title>
+</head>
+<body>
+	<label id="the-label" for="name-input">Please, enter your name:</label>
+	<input type="text" id="name-input" />
+	<button id="start-button">Start</button>
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="node_modules/underscore/underscore-min.js"></script>
+	<script src="task.js"></script>
+</body>
+</html>

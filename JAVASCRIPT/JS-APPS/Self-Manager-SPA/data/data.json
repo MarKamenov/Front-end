@@ -1,0 +1,296 @@
+{
+  "users": [
+    {
+      "username": "Doncho",
+      "passHash": "4cb5ba2355368d4dfd14c9eee9a134791f7001cb",
+      "usernameLower": "doncho",
+      "authKey": "undefined+tusvd@Kh_@ixbA*Q$fvLmq(CJJmu*DN%E^i@OUr&eoAJn!*uak",
+      "id": "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
+      "events": [
+        {
+          "id": 449037,
+          "title": "Test",
+          "category": "Work",
+          "description": "",
+          "date": "2015-09-08T23:00:00.000Z",
+          "creatorId": "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
+          "users": [
+            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
+            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7"
+          ]
+        },
+        {
+          "id": 449037,
+          "title": "Test",
+          "category": "Work",
+          "description": "",
+          "date": "2015-09-08T23:00:00.000Z",
+          "creatorId": "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
+          "users": [
+            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
+            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7"
+          ]
+        },
+        {
+          "id": 792579,
+          "title": "Test",
+          "category": "Free time",
+          "description": "",
+          "date": "2015-09-17T23:00:00.000Z",
+          "creatorId": "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
+          "users": [
+            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7"
+          ]
+        }
+      ],
+      "todos": [
+        {
+          "id": 27882,
+          "text": "qwe",
+          "state": true,
+          "category": "Home"
+        },
+        {
+          "id": 365117,
+          "text": "NEW TODO",
+          "state": false,
+          "category": "Home"
+        }
+      ]
+    },
+    {
+      "username": "Cuki",
+      "passHash": "6edbb5c948d25789eccdfb37b70ff7f728f49786",
+      "usernameLower": "cuki",
+      "authKey": "undefinedLcy$^v^zXyoxyXQ_BbAJIRYwi%KiGGlD^ry+-N@AIwpP%EhOAUK",
+      "id": "f2c8726a-773e-403c-ad76-37dad93c9a8c"
+    },
+    {
+      "username": "Cuki2",
+      "passHash": "dfacf7f490d8e38e7895caad02e3693236216f51",
+      "usernameLower": "cuki2",
+      "authKey": "undefinedTZvCUbyZH(!=m-+)$fcAjzD)NPiWfGt(r!MHSzrCPAb(nGfp%*!",
+      "id": "1987f231-b978-49de-a5eb-d3f57f1f6fa6"
+    },
+    {
+      "username": "Cuki3",
+      "passHash": "05e18f169bb85da8722deb800fa8e3898c809146",
+      "usernameLower": "cuki3",
+      "authKey": "undefined&a*=xajP_XX&NIPuGIJIgcTfFWlZ&#BdA*zD*@TUUvNc^TmOfw(",
+      "id": "22402c86-f18e-4689-9fc3-237205fad856"
+    },
+    {
+      "username": "kukurigac",
+      "passHash": "ba0b26560b39b44d7172fcd8dd9b246a973000d2",
+      "usernameLower": "kukurigac",
+      "authKey": "undefinedqjGd-Oc$v!q-=bha^ZeQ)YXpu)YG(@psHQCLfKVcjcr(*oaZNue",
+      "id": "0d74843a-a3a1-4458-9293-05f0caf2e79b",
+      "events": [
+        {
+          "id": 891789,
+          "title": "buvtaj malku",
+          "category": "ibrakadabra",
+          "description": "ibrakdabra e mangup",
+          "date": "2016-07-22T22:00:00.000Z",
+          "creatorId": "391e499b-4004-475f-b4f9-3355bef7dcc4",
+          "users": [
+            "0d74843a-a3a1-4458-9293-05f0caf2e79b",
+            "391e499b-4004-475f-b4f9-3355bef7dcc4"
+          ]
+        }
+      ]
+    },
+    {
+      "username": "kuku",
+      "passHash": "f63da816f38d5306c32d38d3c18545e1709773ee",
+      "usernameLower": "kuku",
+      "authKey": "undefinedQ_ZzAEk#fKHRPbbif@RAlXRYCJLHsKCQEWtDrYGeZ+R!)Z@(q)*",
+      "id": "a40a2572-80a0-4ade-9fb3-7fdffe1b28f3"
+    },
+    {
+      "username": "kukurigce",
+      "passHash": "4502ca018bd561f1ace6e22c12889237e55f2179",
+      "usernameLower": "kukurigce",
+      "authKey": "undefinedSIw^)UCxgCiy*g=L*@!=dzWM@H=hB-d+CoEaoIF^@zs@_w(wMzQ",
+      "id": "413bfd86-3ded-4d3b-9de5-dee9d0cabdbc"
+    },
+    {
+      "username": "toastr",
+      "passHash": "777b0cf5ef036722bfc58fe08087fc60be204ce5",
+      "usernameLower": "toastr",
+      "authKey": "undefinedq_!Qu=x*V+gmtPxLsk-+c)ZsBe#N_rKUdhvKpr=TScelBVI$bzP",
+      "id": "f7a08350-1e41-47b8-9a09-9a20028801b2"
+    },
+    {
+      "username": "Vrapce",
+      "passHash": "ac1c6cf7d0be9712b7d56801591235030e1e3186",
+      "usernameLower": "vrapce",
+      "authKey": "undefinedY+$K@ODq-KDUTlpXHxBkLUv=&NZeOhjJ_!aNUQil(yuGaOBNzY)",
+      "id": "391e499b-4004-475f-b4f9-3355bef7dcc4",
+      "todos": [
+        {
+          "id": 99345,
+          "text": "Makariyus",
+          "state": false,
+          "category": "vrapce"
+        },
+        {
+          "id": 180912,
+          "text": "ozbilen",
+          "state": false,
+          "category": "crnicot"
+        },
+        {
+          "id": 208125,
+          "text": "ovalot e skapan",
+          "state": false,
+          "category": "ibrakadabra"
+        },
+        {
+          "id": 970707,
+          "text": "sddfca",
+          "state": false,
+          "category": "ovar"
+        },
+        {
+          "id": 994355,
+          "text": "adsfva",
+          "state": false,
+          "category": "aerfaer"
+        },
+        {
+          "id": 27683,
+          "text": "opa oap troa",
+          "state": false,
+          "category": "aerfaer"
+        }
+      ],
+      "events": [
+        {
+          "id": 891789,
+          "title": "buvtaj malku",
+          "category": "ibrakadabra",
+          "description": "ibrakdabra e mangup",
+          "date": "2016-07-22T22:00:00.000Z",
+          "creatorId": "391e499b-4004-475f-b4f9-3355bef7dcc4",
+          "users": [
+            "0d74843a-a3a1-4458-9293-05f0caf2e79b",
+            "391e499b-4004-475f-b4f9-3355bef7dcc4"
+          ]
+        },
+        {
+          "id": 687675,
+          "title": "Drndaj malku",
+          "category": "vrapce",
+          "description": "njama problema",
+          "date": "2016-07-29T22:00:00.000Z",
+          "creatorId": "391e499b-4004-475f-b4f9-3355bef7dcc4",
+          "users": [
+            "391e499b-4004-475f-b4f9-3355bef7dcc4",
+            "391e499b-4004-475f-b4f9-3355bef7dcc4"
+          ]
+        },
+        {
+          "id": 687675,
+          "title": "Drndaj malku",
+          "category": "vrapce",
+          "description": "njama problema",
+          "date": "2016-07-29T22:00:00.000Z",
+          "creatorId": "391e499b-4004-475f-b4f9-3355bef7dcc4",
+          "users": [
+            "391e499b-4004-475f-b4f9-3355bef7dcc4",
+            "391e499b-4004-475f-b4f9-3355bef7dcc4"
+          ]
+        }
+      ]
+    },
+    {
+      "username": "opas",
+      "passHash": "a82adfe1250f53c7f849be0beb7a5f267a8c93da",
+      "usernameLower": "opas",
+      "authKey": "undefinedpGb#lmSftO&xxGWyPKQUbx)RZVImaPuWCAFe-eKNwrlLryOeKv-",
+      "id": "53585c48-8b27-4c70-ac1b-d0e5eb3d1756",
+      "todos": [
+        {
+          "id": 343764,
+          "text": "sdfasfdsf",
+          "state": false,
+          "category": "opasot"
+        },
+        {
+          "id": 352588,
+          "text": "adsgfaewgawe",
+          "state": false,
+          "category": "opasot"
+        }
+      ],
+      "events": [
+        {
+          "id": 445311,
+          "title": "asvadvagdv",
+          "category": "opasot",
+          "description": "zdsvdfagf",
+          "date": null,
+          "creatorId": "53585c48-8b27-4c70-ac1b-d0e5eb3d1756",
+          "users": [
+            "53585c48-8b27-4c70-ac1b-d0e5eb3d1756",
+            "53585c48-8b27-4c70-ac1b-d0e5eb3d1756"
+          ]
+        },
+        {
+          "id": 445311,
+          "title": "asvadvagdv",
+          "category": "opasot",
+          "description": "zdsvdfagf",
+          "date": null,
+          "creatorId": "53585c48-8b27-4c70-ac1b-d0e5eb3d1756",
+          "users": [
+            "53585c48-8b27-4c70-ac1b-d0e5eb3d1756",
+            "53585c48-8b27-4c70-ac1b-d0e5eb3d1756"
+          ]
+        }
+      ]
+    },
+    {
+      "username": "serko",
+      "passHash": "a54e3441b35fbd398447943f53899de6ba2c95c4",
+      "usernameLower": "serko",
+      "authKey": "undefinedWXBgV)UHdtdT+oNO&@iqxw#ZwdbaoYWjPW!z@Z$CQz=dEln%vKA",
+      "id": "fcc4eea6-f1cb-44a2-9fcf-e1a89af265b2",
+      "todos": [
+        {
+          "id": 351873,
+          "text": "asdfad",
+          "state": false,
+          "category": "asfads"
+        }
+      ],
+      "events": [
+        {
+          "id": 459810,
+          "title": "asefas",
+          "category": "asfads",
+          "description": "adsfafs",
+          "date": "2016-07-26T23:30:00.000Z",
+          "creatorId": "fcc4eea6-f1cb-44a2-9fcf-e1a89af265b2",
+          "users": [
+            "fcc4eea6-f1cb-44a2-9fcf-e1a89af265b2",
+            "fcc4eea6-f1cb-44a2-9fcf-e1a89af265b2"
+          ]
+        },
+        {
+          "id": 459810,
+          "title": "asefas",
+          "category": "asfads",
+          "description": "adsfafs",
+          "date": "2016-07-26T23:30:00.000Z",
+          "creatorId": "fcc4eea6-f1cb-44a2-9fcf-e1a89af265b2",
+          "users": [
+            "fcc4eea6-f1cb-44a2-9fcf-e1a89af265b2",
+            "fcc4eea6-f1cb-44a2-9fcf-e1a89af265b2"
+          ]
+        }
+      ]
+    }
+  ]
+}

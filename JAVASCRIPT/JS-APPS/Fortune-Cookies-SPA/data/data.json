@@ -1,0 +1,403 @@
+{
+  "users": [
+    {
+      "username": "Minkov",
+      "passHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "usernameToLower": "minkov",
+      "id": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+      "authKey": "16655985-e510-43d4-ad1c-2388c76d1ef6FwHCPd*bP:.;Fu&:evl)RPGg"
+    },
+    {
+      "username": "Minkov3",
+      "passHash": "1234567890123456789012345678901234567890",
+      "usernameToLower": "minkov3",
+      "id": "bd04b3b8-5586-47ad-bf8f-db6c531dbb73",
+      "authKey": "bd04b3b8-5586-47ad-bf8f-db6c531dbb73erxSIAJyVOzIEIrpMFbanscO"
+    },
+    {
+      "username": "Vrapce",
+      "passHash": "65bdf10f15e9bf17928e463828f60dca9bec5f3d",
+      "usernameToLower": "vrapce",
+      "id": "5cdb265b-ec57-4916-8c15-eca754da900e",
+      "authKey": "5cdb265b-ec57-4916-8c15-eca754da900eesEuXkJynunbwEwomKczMCSA",
+      "myCookies": [
+        {
+          "text": "Test",
+          "category": "Home",
+          "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+          "likes": 10,
+          "dislikes": 16,
+          "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+          "shareDate": "2015-09-09T14:53:30.290Z",
+          "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
+          "hours": 23
+        },
+        {
+          "text": "Test",
+          "category": "Home",
+          "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+          "likes": 10,
+          "dislikes": 16,
+          "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+          "shareDate": "2015-09-09T14:53:30.290Z",
+          "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
+          "hours": 23
+        },
+        {
+          "text": "Test",
+          "category": "Home",
+          "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+          "likes": 10,
+          "dislikes": 16,
+          "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+          "shareDate": "2015-09-09T14:53:30.290Z",
+          "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
+          "hours": 23
+        },
+        {
+          "text": "Test",
+          "category": "Home",
+          "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+          "likes": 10,
+          "dislikes": 16,
+          "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+          "shareDate": "2015-09-09T14:53:30.290Z",
+          "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
+          "hours": 23
+        },
+        {
+          "text": "Test",
+          "category": "Home",
+          "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+          "likes": 10,
+          "dislikes": 16,
+          "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+          "shareDate": "2015-09-09T14:53:30.290Z",
+          "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
+          "hours": 23
+        },
+        {
+          "text": "Test",
+          "category": "Home",
+          "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+          "likes": 10,
+          "dislikes": 16,
+          "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+          "shareDate": "2015-09-09T14:53:30.290Z",
+          "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
+          "hours": 23
+        },
+        {
+          "text": "Test",
+          "category": "Home",
+          "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+          "likes": 10,
+          "dislikes": 16,
+          "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+          "shareDate": "2015-09-09T14:53:30.290Z",
+          "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
+          "hours": 23
+        }
+      ]
+    },
+    {
+      "username": "Makara",
+      "passHash": "20404b9feff51036385085172dc347023cc18947",
+      "usernameToLower": "makara",
+      "id": "d2388732-2a04-443b-86e7-487f97817d55"
+    },
+    {
+      "username": "Dembel",
+      "passHash": "469022b52173f47adbcdea73d54469de3379702d",
+      "usernameToLower": "dembel",
+      "id": "3df827f4-9215-4d99-8750-0404535d0aa9"
+    },
+    {
+      "username": "Drakula",
+      "passHash": "fad2c07be49478edf8c2f7b4fab03c86e6488ca6",
+      "usernameToLower": "drakula",
+      "id": "3b6146b3-ad15-4b23-8b30-23e38c80775c"
+    },
+    {
+      "username": "Som",
+      "passHash": "09731bff28c7ca26fa336069f91e1b807fa99f18",
+      "usernameToLower": "som",
+      "id": "7564ac40-4105-4666-8c1f-cfbb7f6c70f7"
+    },
+    {
+      "username": "Apce",
+      "passHash": "5c854c5cd0f680906ab656e8e8909a5948a55fe5",
+      "usernameToLower": "apce",
+      "id": "7976beff-a136-4cb0-a124-87aebdd44b66"
+    },
+    {
+      "username": "Mrsulot",
+      "passHash": "e9d5ba737d68596e31d761e7cdefe4f51d21df5c",
+      "usernameToLower": "mrsulot",
+      "id": "6189b9ba-0ede-4231-826d-5fc45fc4fecf"
+    },
+    {
+      "username": "Krastaviot",
+      "passHash": "8f582b80c7e2b4eed3272de1c3c5634cf34a263f",
+      "usernameToLower": "krastaviot",
+      "id": "95a6e35e-5e40-42e1-a045-f6c076ba2cb6",
+      "authKey": "95a6e35e-5e40-42e1-a045-f6c076ba2cb6XtCZKfzLCARvaHqybXtkCWSL"
+    },
+    {
+      "username": "orangutan",
+      "passHash": "2c5a04285dadd9a005237d203653ea27ff58ad99",
+      "usernameToLower": "orangutan",
+      "id": "5774d438-2547-4570-bf8d-c0249489588a",
+      "authKey": "5774d438-2547-4570-bf8d-c0249489588aPVLdpljrBxxnGWCeGUchAxGU",
+      "myCookies": [
+        {
+          "text": "Test",
+          "category": "Home",
+          "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+          "likes": 10,
+          "dislikes": 16,
+          "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+          "shareDate": "2015-09-09T14:53:30.290Z",
+          "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
+          "hours": 14
+        },
+        {
+          "text": "Test",
+          "category": "Home",
+          "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+          "likes": 10,
+          "dislikes": 16,
+          "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+          "shareDate": "2015-09-09T14:53:30.290Z",
+          "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
+          "hours": 14
+        }
+      ]
+    },
+    {
+      "username": "oooooooooo",
+      "passHash": "ac6272d290b336b277f83d03cec4acc1118b5185",
+      "usernameToLower": "oooooooooo",
+      "id": "b9e051db-cb59-4529-b00d-909a5f59c9c5",
+      "authKey": "b9e051db-cb59-4529-b00d-909a5f59c9c5AqvezEOVAEerYIJxMjEXVdKg",
+      "myCookies": [
+        {
+          "text": "makarisu",
+          "category": "bafalobil",
+          "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+          "userId": "5cdb265b-ec57-4916-8c15-eca754da900e",
+          "likes": 1,
+          "dislikes": 3,
+          "shareDate": "2016-07-04T21:28:32.427Z",
+          "id": "d2917afb-5b70-49b2-8baa-aecf03932f95",
+          "hours": 14
+        },
+        {
+          "text": "Jadi banani",
+          "category": "Monkeys",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/1/14/Orangutan_-Zoologischer_Garten_Berlin-8a.jpg",
+          "userId": "5774d438-2547-4570-bf8d-c0249489588a",
+          "likes": 4,
+          "dislikes": 5,
+          "shareDate": "2016-07-21T12:10:53.600Z",
+          "id": "184142b6-aafa-4941-ac4b-e7ad27cba613",
+          "hours": 15
+        },
+        {
+          "text": "Jadi banani",
+          "category": "Monkeys",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/1/14/Orangutan_-Zoologischer_Garten_Berlin-8a.jpg",
+          "userId": "5774d438-2547-4570-bf8d-c0249489588a",
+          "likes": 4,
+          "dislikes": 5,
+          "shareDate": "2016-07-21T12:10:53.600Z",
+          "id": "184142b6-aafa-4941-ac4b-e7ad27cba613",
+          "hours": 15
+        },
+        {
+          "text": "Jadi banani",
+          "category": "Monkeys",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/1/14/Orangutan_-Zoologischer_Garten_Berlin-8a.jpg",
+          "userId": "5774d438-2547-4570-bf8d-c0249489588a",
+          "likes": 4,
+          "dislikes": 5,
+          "shareDate": "2016-07-21T12:10:53.600Z",
+          "id": "184142b6-aafa-4941-ac4b-e7ad27cba613",
+          "hours": 15
+        },
+        {
+          "text": "Jadi banani",
+          "category": "Monkeys",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/1/14/Orangutan_-Zoologischer_Garten_Berlin-8a.jpg",
+          "userId": "5774d438-2547-4570-bf8d-c0249489588a",
+          "likes": 4,
+          "dislikes": 5,
+          "shareDate": "2016-07-21T12:10:53.600Z",
+          "id": "184142b6-aafa-4941-ac4b-e7ad27cba613",
+          "hours": 15
+        },
+        {
+          "text": "Jadi banani",
+          "category": "Monkeys",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/1/14/Orangutan_-Zoologischer_Garten_Berlin-8a.jpg",
+          "userId": "5774d438-2547-4570-bf8d-c0249489588a",
+          "likes": 4,
+          "dislikes": 5,
+          "shareDate": "2016-07-21T12:10:53.600Z",
+          "id": "184142b6-aafa-4941-ac4b-e7ad27cba613",
+          "hours": 15
+        },
+        {
+          "text": "Jadi banani",
+          "category": "Monkeys",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/1/14/Orangutan_-Zoologischer_Garten_Berlin-8a.jpg",
+          "userId": "5774d438-2547-4570-bf8d-c0249489588a",
+          "likes": 4,
+          "dislikes": 5,
+          "shareDate": "2016-07-21T12:10:53.600Z",
+          "id": "184142b6-aafa-4941-ac4b-e7ad27cba613",
+          "hours": 15
+        },
+        {
+          "text": "Jadi banani",
+          "category": "Monkeys",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/1/14/Orangutan_-Zoologischer_Garten_Berlin-8a.jpg",
+          "userId": "5774d438-2547-4570-bf8d-c0249489588a",
+          "likes": 4,
+          "dislikes": 5,
+          "shareDate": "2016-07-21T12:10:53.600Z",
+          "id": "184142b6-aafa-4941-ac4b-e7ad27cba613",
+          "hours": 15
+        }
+      ]
+    },
+    {
+      "username": "llllll",
+      "passHash": "f9ccea35a96dbe8cd00745c68d45c762c6e58b86",
+      "usernameToLower": "llllll",
+      "id": "0b7f35fa-2963-487f-9569-ff4a822a94e3",
+      "authKey": "0b7f35fa-2963-487f-9569-ff4a822a94e3SYVDFXGnZPiYGuxtDYiunSfv",
+      "myCookies": [
+        {
+          "text": "Vrapcet   ke lapa",
+          "category": "Homceto",
+          "img": "http://f1.pepst.com/c/D1A5D9/361741/ssc3/home/026/amar.dunia/albums/audi_r8_gt3_spotrs_car_img_1.jpg_480_480_0_64000_0_1_0.jpg",
+          "userId": "5cdb265b-ec57-4916-8c15-eca754da900e",
+          "likes": 1,
+          "dislikes": 2,
+          "shareDate": "2016-07-04T21:12:45.881Z",
+          "id": "79e9f00a-d924-41ea-ad39-55960e65234d",
+          "hours": 18
+        },
+        {
+          "text": "Vrapcet   ke lapa",
+          "category": "Homceto",
+          "img": "http://f1.pepst.com/c/D1A5D9/361741/ssc3/home/026/amar.dunia/albums/audi_r8_gt3_spotrs_car_img_1.jpg_480_480_0_64000_0_1_0.jpg",
+          "userId": "5cdb265b-ec57-4916-8c15-eca754da900e",
+          "likes": 1,
+          "dislikes": 2,
+          "shareDate": "2016-07-04T21:12:45.881Z",
+          "id": "79e9f00a-d924-41ea-ad39-55960e65234d",
+          "hours": 18
+        }
+      ]
+    }
+  ],
+  "cookies": [
+    {
+      "text": "Test",
+      "category": "Home",
+      "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+      "likes": 10,
+      "dislikes": 16,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-09T14:53:30.290Z",
+      "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
+      "hours": 14
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+      "likes": 17,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-09T14:53:56.482Z",
+      "id": "e2fdbf82-54c3-488f-add4-9af3262c2572",
+      "hours": 9
+    },
+    {
+      "text": "Hello!",
+      "category": "Home",
+      "userId": "bd04b3b8-5586-47ad-bf8f-db6c531dbb73",
+      "likes": 13,
+      "dislikes": 11,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T06:24:18.743Z",
+      "id": "ea91a233-bcf3-48b6-933f-05857f4aea87"
+    },
+    {
+      "text": "Vrapcet   ke lapa",
+      "category": "Homceto",
+      "img": "http://f1.pepst.com/c/D1A5D9/361741/ssc3/home/026/amar.dunia/albums/audi_r8_gt3_spotrs_car_img_1.jpg_480_480_0_64000_0_1_0.jpg",
+      "userId": "5cdb265b-ec57-4916-8c15-eca754da900e",
+      "likes": 1,
+      "dislikes": 2,
+      "shareDate": "2016-07-04T21:12:45.881Z",
+      "id": "79e9f00a-d924-41ea-ad39-55960e65234d",
+      "hours": 18
+    },
+    {
+      "text": "makarisu",
+      "category": "bafalobil",
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "userId": "5cdb265b-ec57-4916-8c15-eca754da900e",
+      "likes": 1,
+      "dislikes": 3,
+      "shareDate": "2016-07-04T21:28:32.427Z",
+      "id": "d2917afb-5b70-49b2-8baa-aecf03932f95",
+      "hours": 14
+    },
+    {
+      "text": "makarisu",
+      "category": "bafalobil",
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "userId": "5cdb265b-ec57-4916-8c15-eca754da900e",
+      "likes": 0,
+      "dislikes": 1,
+      "shareDate": "2016-07-04T21:28:44.716Z",
+      "id": "ad47c38b-3d05-4156-a34b-1023a1304a9a"
+    },
+    {
+      "text": "ibrakadabra",
+      "category": "Homceto",
+      "img": "http://blog.jamesbyrnegolf.org/wp-content/uploads/IMG-Cor-Logo-WEB2.jpg",
+      "userId": "5cdb265b-ec57-4916-8c15-eca754da900e",
+      "likes": 0,
+      "dislikes": 0,
+      "shareDate": "2016-07-04T21:47:19.365Z",
+      "id": "a8520a0b-57a7-4446-a748-39318945b5eb"
+    },
+    {
+      "text": "Jadi banani",
+      "category": "Monkeys",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/1/14/Orangutan_-Zoologischer_Garten_Berlin-8a.jpg",
+      "userId": "5774d438-2547-4570-bf8d-c0249489588a",
+      "likes": 5,
+      "dislikes": 6,
+      "shareDate": "2016-07-21T12:10:53.600Z",
+      "id": "184142b6-aafa-4941-ac4b-e7ad27cba613",
+      "hours": 15
+    },
+    {
+      "text": "Vrapcet   ke lapa",
+      "category": "Homceto",
+      "img": "http://f1.pepst.com/c/D1A5D9/361741/ssc3/home/026/amar.dunia/albums/audi_r8_gt3_spotrs_car_img_1.jpg_480_480_0_64000_0_1_0.jpg",
+      "userId": "0b7f35fa-2963-487f-9569-ff4a822a94e3",
+      "likes": 0,
+      "dislikes": 0,
+      "shareDate": "2016-07-26T16:28:32.252Z",
+      "id": "939a8cb6-34f6-43ea-b972-8fee42f7f293"
+    }
+  ]
+}
