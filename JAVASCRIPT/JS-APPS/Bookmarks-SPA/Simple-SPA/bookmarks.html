@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bookmarks SPA</title>
+	<link rel="stylesheet" href="bookmarks.css" />
+	 <script src="bower_components/jquery/dist/jquery.js"></script>
+     <script src="bower_components/noty/js//noty/packaged/jquery.noty.packaged.min.js"></script>
+     <script src="scripts/ajaxRequester.js"></script>
+    <script src="scripts/userSession.js"></script>
+    <script src="scripts/app.js"></script>
+</head>
+<body>
+	 <header id="header">
+        <div>
+            Bookmarks
+            <span></span>
+            <a href="#" id="btnLogout">Logout</a>
+        </div>
+    </header>
+    <main>
+    	 <div id="homeView">
+            <a href="#" id="btnShowLoginView">Show Login Form</a>
+            <a href="#" id="btnShowRegisterView">Show Register Form</a>
+        </div>
+        <div id="loginView">
+            <div>Login Form</div>
+            Username: <input type="text" id="txtLoginUsername"  placeholder="in LoginView" /><br/>
+            Password: <input type="password" id="txtLoginPassword" placeholder="in LoginView" /><br/>
+            <a href="#" id="btnLoginLogin">Login</a>
+            <a href="#" id="btnLoginRegister">Register</a>
+        </div>
+         <div id="registerView">
+            <div>Register Form</div>
+            Username: <input type="text" id="txtRegisterUsername" placeholder="in registerView"/><br/>
+            Password: <input type="password" id="txtRegisterPassword" placeholder="in registerView" /><br/>
+            <a href="#" id="btnRegister">Register</a>
+        </div>
+         <div id="bookmarksView">
+            <ul>
+            </ul>
+            <div>
+                <div>New Bookmark</div>
+                Title: <input type="text" id="txtTitle" /><br>
+                Url: <input type="url" id="txtUrl" /><br>
+                <a href="#" id="btnAddBookmark">Add</a>
+            </div>
+        </div>
+    </main>
+     <footer>
+        <div>&copy; 2014 by SoftUni Foundation, No Rights Reserved</div>
+    </footer>
+</body>
+</html>

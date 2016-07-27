@@ -1,0 +1,21 @@
+{
+  "name": "Simple-SPA",
+  "authors": [
+    "MarKamenov <kamenov_i@yahoo.com>"
+  ],
+  "description": "simple example Bookmarks",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "noty": "^2.3.8"
+  }
+}

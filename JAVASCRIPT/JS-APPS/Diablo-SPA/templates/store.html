@@ -1,0 +1,26 @@
+<div id="store">
+    {{#items}}
+    <div class="col-md-3">
+        <h3>{{name}}</h3>
+
+        <p>
+            Type: {{type.name}}
+        </p>
+
+        <p>
+            Attack points: {{attack-points}}
+        </p>
+
+        <p>
+            Defense points: {{defense-points}}
+        </p>
+
+        <p>
+            Life points: {{life-points}}
+        </p>
+        <p>
+            <button class="buy btn btn-md btn-default" data-id="{{_id}}" data-type="{{type.name}}">Buy</button>
+        </p>
+    </div>
+    {{/items}}
+</div>
