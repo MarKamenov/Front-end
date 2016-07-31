@@ -1,0 +1,242 @@
+﻿/*reset*/
+/**
+    * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+    * http://cssreset.com
+    */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+    display: block;
+    box-sizing: border-box;
+    }
+    body {
+    line-height: 1;
+    }
+    ol, ul {
+    list-style: none;
+    }
+    blockquote, q {
+    quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    content: '';
+    content: none;
+    }
+    table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+/*general*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../images/background-flowers.jpg');
+}
+ul{
+    list-style-type:none;
+}
+a{
+    text-decoration:none;
+    color:initial;
+}
+a:hover{
+    text-decoration:underline;
+}
+h1, h2{
+    font-weight:bold;
+}
+#wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-flex-flow: row wrap;
+     flex-flow: row wrap;
+     align-items: stretch;     
+     margin:0 auto;
+     width:66.6%;
+} 
+#wrapper>header, aside, section, footer {
+    background-color: rgba(254, 227, 229, 0.9);
+    border: 2px solid black;
+}
+#wrapper > header{
+    flex: 1 100%;
+    order:1;
+    padding: 2%;
+    margin-bottom: 10px;
+}
+header h1 a {
+        display:flex;
+        justify-content: space-between;
+    }
+header h1 a span {
+        font-size: 2.5em;
+        word-spacing: 30px;
+    }
+header h1 a img {
+        width: 22%;
+        height: 10%;
+    }
+header nav > ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-top:30px;
+    margin-bottom:25px;
+}
+header nav ul li {
+        background-color: #eb2a7b;
+        border: 1px solid black;
+        padding: 10px 0;
+        margin-left: 1%;
+        width: 150px;
+        text-align: center;
+    }
+header nav ul li a {
+        color: white;
+    }
+aside.left {
+    flex: 1;
+    order:2;
+    margin-bottom: 2%;
+    padding:2% 2% 3%;
+}
+aside.left a img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+aside.right {
+    flex: 1;
+    order: 4;
+    line-height:1em;
+    margin-bottom: 2%;
+    padding:3% 4%;
+}
+
+section {
+    flex: 4;
+    order:3;
+    margin: 0 2% 5%;
+    padding: 1% 0 2% 1%;
+}
+section article h1{
+    font-size:1.7em;
+    padding: 2% 0 1%;
+}
+section div img {
+    width: 24%;
+}
+
+footer {
+    flex: 1 1 100%;
+    order:5;
+    text-align:center;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+footer h2{
+    font-size:1.5em;
+}
+@media screen and (max-width:960px){
+     #wrapper {
+        width:100%;
+    }
+    section div img {
+    width: 32.2%;
+    }
+}
+@media screen and (max-width:960px){
+     header nav>ul {
+        justify-content: space-around;
+    }
+    
+    #wrapper>header h1 a {
+        justify-content: space-around;
+    }
+   
+}
+@media screen and (max-width:780px) {
+    body aside.left {
+        flex: 1 100%;
+        order: 2;
+    }
+
+    body aside.right {
+        flex: 1 100%;
+        order: 3;
+    }
+
+    body section {
+        flex: 1 100%;
+        order: 1;
+        margin: 0 0 2%;
+    }
+
+    header h1 a img {
+        width: 40%;
+        height: 30%;
+    }
+}
+@media only screen and (max-width: 640px){
+   #wrapper > header{
+       flex:1 100%;
+        max-width:100%;
+   }
+   header nav > ul{
+       flex-direction:column;
+       align-items:center;
+       width:100%;
+   }
+   header nav ul li {
+       width:95%;
+   }
+    header h1 a{
+        flex-direction:column;
+        align-items:center;
+    }
+     header h1 a span{
+        font-size:1.8em;
+    }
+    nav {
+        width:100%;
+    }
+    nav ul li {
+        display: block;
+        width:100%;
+    }
+    section div img {
+    width: 49%;
+    }
+    section article h1{
+        font-size:1.5em;
+    }
+    footer h2 {
+        font-size: 1.3em;
+    }
+}
+
+

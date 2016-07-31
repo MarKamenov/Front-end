@@ -1,0 +1,239 @@
+﻿/**
+    * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+    * http://cssreset.com
+    */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing:border-box;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+    display: block;
+    }
+    body {
+    line-height: 1;
+    }
+    ol, ul {
+    list-style: none;
+    }
+    blockquote, q {
+    quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    content: '';
+    content: none;
+    }
+    table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+/*general*/
+body {
+    background-color:#6698FF;
+    color:#000000;
+    font: 16px/130% Arial, Helvetica, sans-serif;
+    padding-top:20px;
+}
+#wrapper{
+    width:960px;
+    margin: 0 auto;
+    font-size:1.2em;
+    max-width:100%;   
+}
+h1{
+    font-weight:bold;
+    font-size:1.3em;
+}
+a {	
+	text-decoration: none;	
+}
+a:hover {
+	text-decoration: underline;
+}
+ul{
+    list-style-type:none;
+}
+/*header*/
+
+#wrapper > header{
+    position:relative;
+    margin-bottom:20px;
+    padding:10px;
+    zoom:1;
+}
+#wrapper > header:after {
+  clear: both;
+  display: block;
+  height: 0;
+  content: "";
+}
+#wrapper > header > h1{
+    border-bottom: 3px solid black;
+    padding-bottom: 27px;
+}
+#wrapper > header a{
+    text-decoration:none;
+}
+#wrapper > header a span{
+    font-size:1.5em;
+    color:white;
+}
+#wrapper header nav {
+  float: right;
+  margin-top: -35px;
+}
+#wrapper header nav ul li {
+  background-color: #fff;
+  display: inline-block;
+  font-size: 1em;
+  border: none;
+  margin:14px;
+  border: 1px solid black;
+}
+#wrapper header nav ul li a {
+  padding: 7px 10px;
+  display: block;
+  color:black;
+}
+/*main*/
+section{
+    float:left;
+    margin-right:15px;
+    width:700px;
+}
+article,aside,footer{
+    background-color:#E0EAFE;
+    border:1px solid black;
+}
+article{       
+    margin-bottom:10px;
+    padding:15px 10px;        
+}
+article h1{
+    word-spacing:2px;
+}
+article p {
+    text-indent: 50px;
+    font-size:.7em;
+    padding:20px 0 25px;
+    text-align:justify;
+}
+/*aside*/
+aside {
+    float:left;
+    width:220px;
+    padding:0 25px 20px 10px;
+    margin-right:15px;
+}
+aside ul li:first-child{
+    margin-top:15px;
+}
+.block{
+    margin-top:12px;
+}
+.block a{
+    color:black;
+    font-size:.7em;
+    word-spacing:2px;
+    line-height:.1;
+}
+/*footer*/
+footer{
+    clear:both;
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:5px;
+    font-weight:bold;
+}
+@media only screen and (max-width: 960px){
+   
+    #wrapper{
+        padding:1%;
+    }
+    #wrapper > header a span{
+        position:absolute;
+        top:40px;
+    }
+   section{
+        width:72%;
+        margin-right:2%;     
+    }
+    aside{
+        width:24%;
+        margin-right:0;
+        margin-bottom:10px;
+      }
+
+}
+@media only screen and (max-width: 780px){
+    #wrapper > header a span{
+        position:relative;
+        top:0;
+    }
+    section{
+        float:none;
+        margin:0;
+        width:100%;
+    }
+    aside {
+        float: none;
+        width: 100%;
+        zoom: 1;
+    }
+    aside:after {
+    clear: both;
+    display: block;
+    height: 0;
+    content: "";
+}
+    aside ul li.block{
+        float:left;
+        width:25%;
+        margin:0;
+        padding-left:15px;
+    }
+
+}
+@media only screen and (max-width: 640px){
+    #wrapper > header > h1{
+        text-align:center;
+    }
+    #wrapper > header > h1 a span{
+    display:block;
+    line-height:1.5em;
+    }
+    #wrapper header nav {
+        float:none;
+    }
+    #wrapper header nav ul{
+        padding-top:10px;
+    }
+    #wrapper header nav ul li{
+        display:block;   
+        width:70%;
+        margin:0 auto;
+        text-align:center;
+    }
+}
+
+
+
