@@ -1,0 +1,517 @@
+  
+             /*RESET*/
+html, body, div, span, applet, object,
+ iframe, h1, h2, h3, h4, h5, h6, p, 
+ blockquote, pre, a, abbr, acronym,
+  address, big, cite, code, del, dfn,
+   em, font, img, ins, kbd, q, s, samp, 
+   small, strike, strong, sub, sup, tt, 
+   var, b, u, i, center, dl, dt, dd, ol, 
+   ul, li, fieldset, form, label, legend, 
+   table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+    /*SITE*/
+    /*GENERAL*/
+    *{
+        box-sizing: border-box;
+    }
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+     font-family: 'Lato Black', sans-serif;
+     color:#4e4e4e;
+     width: 1920px;
+     margin: 0 auto;
+}
+.wrapper{
+    width: 1080px;
+   margin:0 auto;
+   position: relative;
+}
+header h1,
+header .left-header h2{
+    text-transform: uppercase;
+}
+.clearfix:after { 
+   content: " "; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+            /*HEADER*/
+
+header{
+    font-family: "Lato Black";
+    background-color:#282828;
+    color: white;
+    height: 689px;
+}
+#logo{
+    float: left;
+}
+header h1{
+    font-size:3.125em;
+}
+header .my, header ul li a{
+      font-family: "Lato Light";
+}
+header h1 span:not(.my){
+    color:#ff6131;
+}
+header nav{
+    float:right;
+}
+header ul li{
+    display: inline-block;
+    margin-left: 33px;
+}
+header ul li a{
+    line-height: 2.625em;
+    color:white;
+}
+.left-header{
+    width: 512px;
+    margin-top: 124px;
+    word-break: break-all;
+}
+.left-header h1{
+    font-size: 7.5em;
+    letter-spacing: -3px;
+}
+.left-header .more{
+    color:#c2c2c2;
+    font-family: "Lato Hairline";
+}
+header .left-header h2 {
+    font-size: 2.625em;
+    margin-top: 53px;
+     letter-spacing: -3px;
+}
+header .left-header h2 span{
+    color:#b1b1b1;
+    font-family: "Lato Hairline";
+}
+header .left-header p{
+     font-family: "Lato Hairline";
+     margin-top: 36px;
+    font-size: 1.125em;
+    line-height: 1.5em;
+    color:#eaeaea;
+}
+header img{
+    position: absolute;
+    right: 0;
+    top:130px;
+}
+/*SECTION WHAT WE*/
+#what h2{
+     font-size: 2.625em;
+     margin-top: 87px;
+}
+#what h2 span:first-child{
+     font-family: "Lato Hairline";
+ }
+#what h2 span:last-child{
+    color:#ff6131;
+}
+#what .wrapper > p{
+   font-family: "Lato Light";
+    font-size:1.125em;
+    margin-top: 15px;
+}
+.what-we{
+    margin-top: 65px;
+    margin-bottom: 77px;
+}
+.what-we .block-1{
+    float:left;
+    width: 33.33%;
+    margin-bottom: 55px;
+}
+.block-1 img{
+    float:left;
+     color:#353535;
+     margin-right: 27px;
+}
+.block-1 h4{
+    padding-top: 40px;
+     font-size:1.125em;
+     text-transform: uppercase;
+}
+.block-1 p{
+     font-family: "Lato Light";
+     font-size: .875em;
+     margin-top: 17px;
+     line-height: 1.5em;
+}
+
+/*SECTION BRING*/
+
+#bring-out{
+    background-color: #303030;
+    height: 730px;
+}
+#bring-out .wrapper{
+    position: relative;
+}
+#bring-out img{
+    position: absolute;
+    right: 0;
+    top:96px;
+}
+.pixel{
+    padding-top: 63px;
+    width: 525px;
+}
+.pixel h1{
+    font-size: 2.625em;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+}
+.pixel h1 span{
+     font-family: "Lato Hairline";
+}
+.pixel > p{
+    color:#878787;
+     font-family: "Lato Light";
+     font-size: 1.125em;
+     margin-bottom: 70px;
+}
+.pix-content{
+    width: 240px;
+    margin-bottom: 38px;
+    float: left;
+}
+.pix-content h5{
+    font-family: "Lato Bold";
+    font-size: 1.125em;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    color:white;
+}
+.pix-content h5 span.spr{
+    display: inline-block;
+    margin-right: 13px;
+    width: 35px;
+    height: 35px;
+    background: transparent url("imgs/pixel-sprite.png") no-repeat left center;
+    vertical-align: middle;
+}
+.pix-content h5 span.spr-1{
+      background: transparent url("imgs/pixel-sprite.png") no-repeat -35px center;
+}
+.pix-content h5 span.spr-2{
+      background: transparent url("imgs/pixel-sprite.png") no-repeat -70px center;
+}
+.pix-content h5 span.spr-3{
+      background: transparent url("imgs/pixel-sprite.png") no-repeat -105px center;
+}
+.pix-content h5 span.spr-4{
+      background: transparent url("imgs/pixel-sprite.png") no-repeat -140px center;
+}
+.pix-content h5 span.spr-5{
+      background: transparent url("imgs/pixel-sprite.png") no-repeat -175px center;
+}
+.pix-content h5 span:last-child{
+     color:#ff6131;
+}
+.pix-content p{
+    margin-top: 15px;
+    color:#afafaf;
+    line-height: 1.2em;
+    font-family: "Lato Light";
+    font-size: .875em;
+}
+.left-part{
+    margin-right: 40px;
+}
+
+/*FEATURES*/
+
+#features{
+    padding-top: 105px;
+}
+ h1.some-super{
+    font-size: 2.625em;
+    text-transform: uppercase;
+}
+h1.some-super span:first-child{
+     font-family: "Lato Hairline";
+     }
+h1.some-super span:last-child{
+     color:#ff6131;
+}
+#features .wrapper > p{
+    margin-top: 15px;
+    font-family: "Lato Light";
+    font-size: 1.125em;
+}
+.buld-fast{
+    margin-top: 70px;
+}
+.parts{
+    width: 31.8%;
+    float:left;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 30px;
+}
+.right-mrg{
+    margin-right: 2.3%;
+}
+.parts h3 span{
+    display: inline-block;
+}
+.parts h3 span:first-child{
+    font-size: 2em;
+    color: #919191;
+}
+.parts h3 span:nth-child(3){
+    font-family: "Lato Bold";
+    font-size: 1.5em;
+    padding: 6px 0 2px 15px;
+    border-left: 1px solid #303030;
+    text-transform: uppercase;
+}
+.parts h3 span:nth-child(2){
+    padding-right: 9px;
+}
+.parts h3 span:last-child,
+.parts h3 span:nth-child(2){
+    color:#ff6131;
+}
+.parts p{
+    margin-top: 15px;
+     font-family: "Lato Light";
+     font-size: .875em;
+     color:#353535;
+     line-height: 1.5em;
+}
+.to-top{
+    position: relative;
+    top: 1px;
+    margin-top: 52px;
+    width: 242px;
+    background-color: #373737;
+}
+.to-top h1 a{
+    display: block;
+    color:white;
+    font-size: 3.125em;
+    line-height:1.49em;
+    text-align: center;
+}
+.to-top h1 a span:first-child{
+     font-family: "Lato Light";
+}
+.to-top h1 a span:last-child{
+     color:#ff6131;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #373737;
+    padding-top: 84px;
+    border-top: 1px solid #afafaf;
+}
+ .bottom{
+    background-color: #252525;
+}
+footer h2{
+    font-size: 2em;
+    font-family: "Lato Hairline";
+    color:#8e8e8e;
+    text-transform: uppercase;
+    text-align: center;
+}
+footer h1 {
+    padding:40px 82px;
+    font-size: 7.5em;
+    text-align: center;
+    letter-spacing:-9px ;
+     font-family: "Lato Hairline";
+     border-bottom:1px solid #4e4e4e;
+}
+footer h1 span{
+    color:white;
+    font-family: "Lato Black";
+}
+.ft-content{
+    padding-bottom: 50px;
+}
+.ft-content > div:first-child{
+    margin-right: 3.2%;
+}
+.ft-content > div:nth-child(2){
+    margin-right: 2.5%;
+}
+.ft-block{
+    width: 31.4%;
+    margin-top: 63px;
+    float: left;
+    color:white;
+}
+.ft-block h3{
+    font-size: 1.5em; 
+    margin-bottom: 34px;
+    text-transform: uppercase; 
+}
+.ft-block h3 span{
+    color:#ff6131;
+}
+.ft-1 > p{
+    font-family: "Lato Regular";
+    font-size: 1.125em;
+
+}
+.ft-1 > p mark{
+    background-color:#ff6131; 
+}
+.ft-1 > p:last-of-type{
+    margin-top: 35px;
+}
+.ft-1 address{
+    margin-top: 33px;
+    color:#d7d7d7;
+    font-style: normal;
+    font-size: .875em;
+    text-transform: uppercase;
+    font-family: "Lato Hairline";
+}
+.ft-1 address a{
+     color:#d7d7d7;
+}
+.ft-1 address p{
+    line-height: 2em;
+}
+.ft-1 address p i{
+    padding-right: 7px;
+}
+.ft-2 > div img{
+    float:left;
+}
+.ft-2 > div h4{
+    padding-bottom: 15px;
+     font-family: "Lato Bold";
+    font-size: 1.125em;
+    border-bottom:1px solid #434343;
+    text-transform: uppercase;
+}
+.ft-2 > div h4 span{
+    color:#ff6131;
+}
+.ft-2 > div p{
+    margin-top: 15px;
+    font-size: .875em;
+    text-transform: uppercase;
+    font-family: "Lato Hairline";
+    color:#d7d7d7;
+    letter-spacing: -0.5px;
+}
+.ft-2 .txt p i.fa-comment-o{
+    padding-right: 4px;
+}
+.ft-2 .txt p i.fa-calendar-o{
+    padding-left: 14px;
+}
+.ft-2 div:first-of-type{
+    margin-bottom: 20px;
+}
+.ft-2 .txt{
+    float:left;
+    width: 228px;
+    margin-left: 13px;
+}
+.ft-3 img{
+    max-width: 100%;
+}
+.bottom{
+    color:white;
+    height: 75px;
+}
+.bottom p{
+    float: left;
+     font-family: "Lato Light";
+     font-size: .875em;
+     line-height: 75px;
+}
+.bottom p span{
+    font-family: "Lato Black";
+    text-transform: uppercase;
+}
+.bottom ul{
+    float: right;
+    margin-top: 20px;
+}
+.bottom ul li{
+    display: inline-block;
+    margin-left: 4px;
+}
+.bottom li a{
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: transparent url("imgs/social-sprite.png") no-repeat left center;
+}
+.bottom li.in a{
+    background: transparent url("imgs/social-sprite.png") no-repeat -32px center;
+}
+.bottom li.g a{
+    background: transparent url("imgs/social-sprite.png") no-repeat -64px center;
+}
+.bottom li.di a{
+    background: transparent url("imgs/social-sprite.png") no-repeat -96px center;
+}
+.bottom li.tw a{
+    background: transparent url("imgs/social-sprite.png") no-repeat -128px center;
+}
