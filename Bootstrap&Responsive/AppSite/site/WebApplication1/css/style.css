@@ -1,0 +1,469 @@
+html {
+	background: #536475 url(../img/htmlBG.png) repeat-x;
+}
+
+body {
+	color: white;
+	font-family: helvetica, arial, sans-serif;
+}
+
+
+/* GENERAL STYLES */
+
+a {
+	color: white;
+}
+
+a.button {
+	position: relative;
+	background: #5e7285;
+	border-top: 1px solid #a3b5d4;
+	padding: 6px 9px;	
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border: 1px solid #a3b5d4;
+	text-decoration: none;	
+	text-shadow: 0 1px 0 black;
+	font-size: 1em;
+	font-weight: bold;
+	-moz-box-shadow: 0 0 1px black;
+	-webkit-box-shadow: 0 0 1px black;
+}
+
+a.button:hover {
+	background: #4a5969;
+}
+
+p::selection, li::selection, a::selection {
+	background: #251440;
+}
+
+p::-moz-selection, li::-moz-selection, a::-moz-selection {
+	background: #251440;
+}
+
+#container {
+	position: relative;
+}
+
+
+
+/* HEADER */
+
+nav.navbar{
+	background-color: #5e7285;
+	border:none;
+	padding-bottom: 5px;
+}
+	 #nav {
+	 	padding-top: 10px;
+	 }
+		 #nav li  {
+			background: #5e7285;
+			list-style: none;
+			padding: 6px 9px;
+			height: 28px;
+			line-height: 28px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border: 1px solid #a3b5d4;
+		}
+	
+		 #nav li.selected,  #nav li:hover {
+			background: #536475 url(../img/buttonBG.png) repeat-x;
+			border: 1px solid #161e2a;
+			/* css 3 gradient */
+		}
+	
+			#nav li a {
+				padding: 0;
+				position: relative;
+    			top: -2px;
+				text-decoration: none;
+				display: block;
+				color:white;
+			}			
+			
+/* APPS */
+
+		#apps {
+			margin-top:100px;
+		}
+		#apps-left{
+			position: absolute;
+		}
+		#apps-right{
+			float:right;
+		}
+		#apps ul li {	
+			text-align: center;	
+			margin-left: 0;
+			margin-right: 30px;	
+			font-weight: bold;
+		}
+		
+		#apps ul li.current, #apps ul li:hover {
+			background: #475665 url(../img/currentAppBG.png) repeat-x ;
+			border: 1px solid #28313b;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+		}
+		#apps ul li.current a, #apps ul li:hover a{
+		color:white;/*small fix, without this pic moves right*/
+		}
+		
+			#apps ul li.current a img.img-responsive, #apps ul li:hover a img.img-responsive{
+			}
+		
+			#apps ul li a {
+				display: block;
+				width: 100%;
+				height: 100%;
+				text-decoration: none;
+				font-size: 10px;			
+			}
+			#under-apps{
+				margin-top: 50px;
+			}
+
+/* MAIN BANNER */
+
+#banner {
+	background: url(../img/bannerBG.jpg) no-repeat;
+	margin-top: 15px;
+	color: white;
+	padding-left: 34px;
+	position: relative;
+	height: 284px;
+}
+
+	#banner h2 {
+		color: #d8dbde;
+		font-size: 3.69em;
+		line-height: 58px;
+		border-bottom: 1px solid black;
+		padding-top: 31px;
+		padding-bottom: 18px;
+		margin-bottom: 0;
+		text-shadow: 0 1px 3px black;
+		margin-right: 350px;		
+	}
+	
+	#banner p {
+		margin-top: 0;
+		padding-top: 25px;
+		border-top: 1px solid #5b5c6c;
+		font-size: 1.5em;
+		line-height: 36px;
+		text-shadow: 0 1px 3px black;
+		margin-right: 350px;		
+		
+	}
+	
+		#banner p strong {
+			color: #131828;
+		}
+	
+	#banner img#phone {
+		position: absolute;
+		right: 111px; top: 55px;
+	}
+	
+	#banner img#download {
+		position: absolute;
+		left: 190px;
+		bottom: -45px;
+	}
+	
+/* MAIN */
+
+#main {
+clear: both;
+padding-top: 50px;  /* padding/margin = IE fix */
+margin-top: -50px;
+padding-bottom: 70px;
+
+}
+
+	#main h4, #main h3 {
+		color: #131828;
+		text-shadow: 0 1px 1px #8d97a2;
+	}
+	
+	#main h3 {
+		margin-bottom: 0;		
+	}
+	
+	#main h4 {
+		margin-bottom: 9px;
+	}
+	
+	#main ul li {
+		margin-left: 15px;
+		margin-bottom: 10px;
+		line-height: 18px;
+		font-size: 1em;
+	}
+	
+		#main #sub1 h3 {
+			font-size: 2.76;
+			margin-top: -17px;
+		}
+		
+		#main #sub1 p {
+			font-weight: bold;
+		}
+		
+		#main #sub1 li {
+			list-style: none;
+			float: left;
+			margin-left: 0;
+			margin-right: 5px;
+		}
+		
+		#main #sub2 li {
+			font-weight: bold;
+			list-style: none;
+			margin-left: 0;
+			padding-left: 15px;
+			background: url(../img/bullet.png) no-repeat 0 50%;
+		}
+	
+		#main #sub3 {
+			margin-top: 143px;
+		}
+		
+		#main #sub3 p {
+			font-size: .9em;
+		}
+		
+			#main #sub3 p:first-child {
+				background: url(../img/border2.png) repeat-x 0 100%;
+				padding-bottom: 14px;
+				margin-bottom: 14px;				
+			}
+		
+		#main #sub3 li {
+			background: url(../img/border2.png) repeat-x 0 100%;
+			font-weight: bold;
+			font-style: italic;
+			padding-bottom: 14px;
+			margin-bottom: 14px;
+			margin-left: 0;
+			list-style: none;
+		}
+		
+		#main #sub3 li:last-child {
+			background: none;
+		}
+		
+		
+/* FOOTER */
+
+#footer-wrap {
+		background: #212b3f url(../img/footerBG.png) repeat-x;
+}
+
+	#footer {
+		overflow: hidden;
+		font-size: .9em;
+		font-weight: bold;
+		padding-bottom: 32px;
+	}
+	
+		#footer div:last-child a.button{
+			display: block;	
+			width: 90px;
+			margin-top: 30px;	
+			clear: both;		
+		}
+	
+		#footer ul li {
+			list-style: none;
+			margin-left: 0;
+			padding-bottom: 11px;
+			margin-bottom: 15px;
+			border-bottom: 1px dashed #cccccc;
+		}
+		
+			#footer li:last-child {
+				border-bottom: 0;
+			}
+		
+			#footer li span {
+				color: #85a1bc;
+				display: block;
+				margin-top: 5px;
+			}
+			
+				#footer li a {
+					text-decoration: none;
+				}
+	
+		#footer h4 {
+			color: #85a1bc;
+			text-shadow: 0 1px 3px black;
+			font-size: 1.5em;
+			line-height: 24px;
+			margin-top: 24px;
+			padding-bottom: 16px;
+			background: url(../img/border.png) repeat-x 0 100%;
+		}
+		
+			#footer h4 small {
+				font-size: .9em;
+			}
+			
+			#footer a.button img {
+				position: absolute;
+				bottom: 5px;
+				right: -8px;
+			}
+			
+			
+/* VERY BOTTOM */
+			
+#bottom-wrap {
+	background: url(../img/bottomBG.png) repeat-x;
+}
+
+#bottom {
+	overflow: hidden;
+	padding-top: 23px;
+	padding-bottom: 30px;
+}
+
+	#bottom-wrap #bottom .col-md-4 p:only-child {
+		float: left; /* IE fix */
+	}
+
+	#bottom-wrap p, #bottom-wrap p a {
+		color: #212b3f;
+		font-weight: bold;
+			display: inline;
+	}
+	
+			#bottom li {
+				list-style: none;
+				float: left;
+				font-weight: bold;
+			}
+	
+				#bottom li.selected a, #bottom a:hover {
+					color: white;
+					text-decoration: underline;
+				}
+
+				#bottom ul li a {
+					color: #97b8d8;
+					text-decoration: none;
+				}
+	@media (min-width: 992px){
+
+		#bottom #footernav li {
+			margin-left: 15px;
+		}
+     
+ 
+	}
+	@media (max-width: 991px){
+		#apps-left{
+			width: 100%;
+		}
+
+	#apps #apps-left .list-inline{
+		margin-top: -20px;
+		display: flex;
+  			justify-content: center;
+	}
+	#apps-left .list-inline li a{
+		outline:none;
+	}	
+
+		#banner h2{
+			width: 100%;
+    		text-align: center;   
+		}
+		#banner p{
+			width: 100%;
+			line-height: 20px;
+		}
+		#banner img#download{
+			position: absolute;
+   		 	left: 30%;
+		}
+		#main{
+			margin-top: 50px;
+			text-align: center;
+		}
+		#sub1 ul.clearfix{
+			 display: flex;
+  			justify-content: center;
+		}
+		#main #sub2 li {
+			background: none;
+		}
+		#main #sub3{
+			margin-top: 0;
+		}
+		#footer{
+			text-align: center;
+		}
+		#footer a#bird{
+		margin: 30px auto;
+		}
+		#bottom-wrap #bottom .pull-left {
+			float:none;
+			text-align: center;
+    		width: 100%;
+
+		}
+		#bottom-wrap #bottom .pull-right{
+			float:none;
+    		width: 100%;
+
+		}
+		#footernav{
+		 display: flex;
+ 		 justify-content: center;
+  		margin-top:10px;
+		}
+	
+	}
+	@media (max-width: 768px){
+
+		#nav li{
+			position: relative;
+    		display: block;
+    		text-align: center;
+    		margin-left: 0;
+		}
+		.navbar-nav>li>a {
+		position: relative;
+    	display: block;
+    	padding: 10px 15px;
+    	line-height: 20px;
+
+}
+	button .icon-bar{
+	margin: 0 auto;
+}
+
+	}
+	@media (max-width: 340px){
+
+		#banner img#download{
+			position: absolute;
+   		 	left: 25%;
+		}
+		.navbar-brand img{
+			width: 190px;
+		}
+		#bottom .pull-right{
+			margin-right: 30px;
+			padding-right: 30px;
+		}
+		#sub1 .list-inline{
+			display: none;
+		}
+	}
