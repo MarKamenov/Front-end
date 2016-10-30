@@ -1,1 +1,1 @@
-Appwebsite is transformed from unresponsive to tesponsive sing bootstrap 3
+Appwebsite is transformed from unresponsive to responsive using bootstrap 3
