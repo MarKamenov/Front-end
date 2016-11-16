@@ -1,0 +1,1 @@
+REsponsive using media queries
