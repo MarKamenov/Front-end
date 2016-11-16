@@ -43,8 +43,7 @@ var app = app || {};
 
         this.get('#/',function(){
             homeController.loadWelcomePage(sel);
-        });
-         
+        });       
          this.get('#/home/', function() {
             homeController.loadHomePage(sel);
         });

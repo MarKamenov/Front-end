@@ -72,9 +72,9 @@ app.controller = (function() {
              document.location = '#/'
         });
     }
-    var attachCreateBookmarkHandler = function(selector) {
+    var attachCreateBookmarkHandler = function(sel) {
         var _this = this;
-        $(selector).on('click', '#create-bookmark', function(ev) {
+        $(sel).on('click', '#create-bookmark', function(ev) {
             var title = $('#title').val();
             var url = $('#url').val();
             var bookmark = {
