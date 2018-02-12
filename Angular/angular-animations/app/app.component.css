@@ -1,0 +1,123 @@
+:host>>>p-datatable .ui-datatable-tablewrapper tbody>tr.ui-widget-content>td,
+td.children {
+	color: rgb(91, 31, 105);
+	border-color: inherit;
+	padding: .25em .5em;
+	border-width: 1px;
+	border-style: solid;
+	display: table-cell;
+	cursor: pointer
+}
+
+:host>>>p-datatable:last-of-type .ui-datatable-tablewrapper tbody>tr.ui-widget-content>td,
+td.children:first-child {
+	cursor: default
+}
+
+:host>>>p-datatable:last-of-type .ui-datatable {
+	margin-top: 50px;
+}
+
+td.children:first-child:active {
+	background-color: initial;
+	color: initial
+}
+
+td.hide {
+	position: absolute;
+	top: -200px
+}
+
+button.reset {
+	position: absolute;
+	top: 6px;
+	right:6px
+}
+
+div.row.breadcrumb {
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+div.col-md-offset-2 {
+	padding-right: 0;
+}
+
+div.left {
+	padding-left: 0;
+}
+
+ol.breadcrumb {
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+
+ol.breadcrumb li h5 {
+	margin-top: 0;
+}
+
+
+/*add style to first(summary) table*/
+
+:host>>>p-datatable:first-of-type .ui-datatable tbody>tr.ui-datatable-odd>td:not(:first-child):hover,
+:host>>>p-datatable:first-of-type .ui-datatable tbody>tr.ui-datatable-even>td:not(:first-child):hover,
+td.children:not(:first-child):hover {
+	background-color: cornflowerblue;
+}
+
+:host>>>p-datatable:first-of-type .ui-datatable-tablewrapper tbody>tr.ui-datatable-odd>td:not(:first-child).active,
+:host>>>p-datatable:first-of-type .ui-datatable-tablewrapper tbody>tr.ui-datatable-even>td:not(:first-child).active {
+	background-color: orangered;
+	color: white;
+}
+
+.active {
+	background-color: orangered;
+	color: white!important;
+}
+
+td:active {
+	color: white;
+}
+
+
+/*first level row cells*/
+
+:host>>>.ui-datatable tbody>tr.ui-widget-content>td:not(:first-child):active {
+	color: white;
+	font-weight: bold
+}
+
+:host>>>.ui-datatable tbody>tr.ui-widget-content>td:not(:first-child) {
+	cursor: pointer
+}
+
+:host>>>.ui-datatable tbody>tr.ui-widget-content.ui-datatable-odd.ui-expanded-row,
+:host>>>.ui-datatable tbody>tr.ui-widget-content.ui-datatable-even.ui-expanded-row {
+	background-color: darkviolet;
+}
+
+:host>>>.ui-datatable tbody>tr.ui-widget-content.ui-datatable-odd.ui-expanded-row span.ui-cell-data,
+:host>>>.ui-datatable tbody>tr.ui-widget-content.ui-datatable-even.ui-expanded-row span.ui-cell-data{
+	color: white 
+}
+
+:host>>>.ui-datatable .ui-row-toggler {
+	color: darkviolet;
+}
+
+:host>>>.ui-datatable tbody>tr.ui-widget-content.ui-datatable-odd.ui-expanded-row>td .ui-row-toggler,
+:host>>>.ui-datatable tbody>tr.ui-widget-content.ui-datatable-even.ui-expanded-row>td .ui-row-toggler {
+	color: white;
+}
+
+:host>>>.ui-expanded-row-content {
+	background-color: aliceblue;
+}
+
+:host>>>.ui-datatable .ui-datatable-data>tr.ui-expanded-row-content>td[colspan*="5"] {
+	padding: 0;
+}

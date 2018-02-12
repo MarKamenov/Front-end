@@ -1,0 +1,54 @@
+ [
+
+ 	{
+ 		"level": 2,
+ 		"contractName": "Allianz",
+ 		"contractId": "1e83e559-605dcd67",
+ 		"siteName": "5609334 Brotherton House",
+ 		"siteId": "1e22e579-605dcd67",
+ 		"assetRuleBreaches": 1,
+ 		"energyRuleBreaches": 2,
+ 		"hpwBreaches": 0
+ 	},
+ 	{
+ 		"level": 2,
+ 		"contractName": "Allianz",
+ 		"contractId": "1e83e559-605dcd67",
+ 		"siteName": "5645464 Heathside Park",
+ 		"siteId": "1e55e579-605dcd67",
+ 		"assetRuleBreaches": 1,
+ 		"energyRuleBreaches": 1,
+ 		"hpwBreaches": 1
+ 	},
+ 	{
+		"level": 2,
+ 		"contractName": "Allianz Digital Office",
+ 		"contractId": "217b47e7-0f9887e3",
+ 		"siteName": "509687 Bank House Bristol",
+ 		"siteId": "211b47e7-0f9887e3",
+		"assetRuleBreaches": 1,
+ 		"energyRuleBreaches": 2,
+ 		"hpwBreaches": 1
+ 	},
+	 {
+		"level": 2,
+ 		"contractName": "Allianz Digital Office",
+ 		"contractId": "217b47e7-0f9887e3",
+ 		"siteName": "509556 Hartshead House",
+ 		"siteId": "266b47e7-0f9887e3",
+		"assetRuleBreaches": 1,
+ 		"energyRuleBreaches": 0,
+ 		"hpwBreaches": 1
+	 },
+	 {
+		"level": 2,
+ 		"contractName": "Allianz Digital Office",
+ 		"contractId": "217b47e7-0f9887e3",
+ 		"siteName": "556789 North House",
+ 		"siteId": "233b47e7-0f9887e3",
+		"assetRuleBreaches": 0,
+ 		"energyRuleBreaches": 1,
+ 		"hpwBreaches": 1
+	 }
+	 
+ ]

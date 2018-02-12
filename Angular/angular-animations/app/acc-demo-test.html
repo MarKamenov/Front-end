@@ -1,0 +1,108 @@
+<p-dataTable [value]="level1Data" collapsedIcon="fa-plus-square-o" expandedIcon="fa-minus-square-o" [responsive]="true" [alwaysShowPaginator]="false"
+    [rows]="10" [paginator]="true" [pageLinks]="3" [rowsPerPageOptions]="[5,10]" (onRowClick)="cellClick($event)" (onRowExpand)="loadLevel2Data($event)"
+    (onRowCollapse)="collapseRow($event)" [(selection)]="selectedBreaches" rowExpandMode="single" expandableRows="true" columnResizeMode="expand">
+	<p-header>BREACHES SUMMARY TABLE</p-header>
+	<p-column [expander]="true" field="contractName" header="Contract" [filter]="true" filterPlaceholder="Filter by contract">
+		<ng-template let-col let-node="rowData" pTemplate="body">
+			<span>{{node.contractName}}</span>
+		</ng-template>
+	</p-column>
+	<p-column field="sitesWithBreaches" header="Sites with breaches" >
+		<ng-template let-col let-node="rowData" pTemplate="body">
+			<span>{{node.sitesWithBreaches}}</span>
+		</ng-template>
+	</p-column>
+	<p-column field="assetRuleBreaches" header="Asset rule Breaches" >
+		<ng-template let-col let-node="rowData" pTemplate="body">
+			<span>{{node.assetRuleBreaches}}</span>
+		</ng-template>
+	</p-column>
+	<p-column field="energyRuleBreaches" header="Energy rule breaches" >
+		<ng-template let-col let-node="rowData" pTemplate="body">
+			<span>{{node.energyRuleBreaches}}</span>
+		</ng-template>
+	</p-column>
+	<p-column field="hpwBreaches" header="HPW Breaches">
+		<ng-template let-col let-node="rowData" pTemplate="body">
+			<span>{{node.hpwBreaches}}</span>
+		</ng-template>
+	</p-column>
+
+	<ng-template let-parent pTemplate="rowexpansion">
+
+		<p-dataTable #dt [value]="level2Data" 
+					[responsive]="true" 
+					(onRowClick)="cellClick($event)"
+					[(selection)]="selectedBreaches" 
+					columnResizeMode="expand">
+
+		<p-column styleClass="children ui-cell-data level2" field="contractName" header="contractName">
+			<ng-template let-col let-node="rowData" pTemplate="body">
+				<span>{{node.contractName}}</span>
+			</ng-template>
+		</p-column>
+		<p-column styleClass="children ui-cell-data level2" field="siteName" header="sites" [filter]="true" filterPlaceholder="Filter by siteName" filterMatchMode="contains">
+			<ng-template let-col let-node="rowData" pTemplate="body">
+				<span>{{node.siteName}}</span>
+			</ng-template>
+		</p-column>
+		<p-column styleClass="children ui-cell-data level2" field="assetRuleBreaches" header="asets" [filter]="true" filterPlaceholder="Filter by siteName" filterMatchMode="contains">
+			<ng-template let-col let-node="rowData" pTemplate="body">
+				<span>{{node.assetRuleBreaches}}</span>
+			</ng-template>
+		</p-column>
+		<p-column styleClass="children ui-cell-data level2" field="energyRuleBreaches" header="energy" [filter]="true" filterPlaceholder="Filter by siteName" filterMatchMode="contains">
+			<ng-template let-col let-node="rowData" pTemplate="body">
+				<span>{{node.energyRuleBreaches}}</span>
+			</ng-template>
+		</p-column>
+			<p-column styleClass="children ui-cell-data level2" field="hpwBreaches" header="hpw" [filter]="true" filterPlaceholder="Filter by siteName" filterMatchMode="contains">
+			<ng-template let-col let-node="rowData" pTemplate="body">
+				<span>{{node.hpwBreaches}}</span>
+			</ng-template>
+		</p-column>
+
+		</p-dataTable>
+		<!--<tr id="{{i}}" style="display:flex" *ngFor="let ch of level2Data;  let i = index">
+			<td width='20%' class="children ui-cell-data">{{parent.contractName}}</td>
+			<td width='20%' (click)="cellClick($event)" class="children ui-cell-data level2">{{ch.siteName}}</td>
+			<td width='20%' (click)="cellClick($event)" class="children ui-cell-data level2">{{ch.assetRuleBreaches}}</td>
+			<td width='20%' (click)="cellClick($event)" class="children ui-cell-data level2">{{ch.energyRuleBreaches}}</td>
+			<td width='20%' (click)="cellClick($event)" class="children ui-cell-data level2">{{ch.hpwBreaches}}</td>
+			<td class="children ui-cell-data level2 hide">{{ch.contractId}}</td>
+			<td class="children ui-cell-data level2 hide">{{ch.siteId}}</td>
+		</tr>-->
+	</ng-template>
+</p-dataTable>
+<!--<p>Selected Breaches Sites: [style]="{'width':'48px'}"
+	<span>{{selectedBreaches | json}}</span>
+</p>-->
+<button type="button" class="btn btn-info btn-xs pull-right reset" (click)="reset()">reset filters</button>
+<div *ngIf="selectedBreaches !== null" class="row breadcrumb">
+	<div class="col-md-8 col-lg-8 left">
+		<ol class="breadcrumb">
+			<li>
+				<h5>Selected:</h5>
+			</li>
+			<li *ngIf="contractName !== null" class="breadcrumb-item">Contract: {{contractName}}</li>
+			<li *ngIf="siteName !== null" class="breadcrumb-item">{{toggleText ? 'Site with breaches' : 'Sites with breaches'}}: {{siteName}}</li>
+			<li *ngIf="breachType1 !== null" class="breadcrumb-item">Asset rule breaches: {{breachType1}}</li>
+			<li *ngIf="breachType2 !== null" class="breadcrumb-item">Energy rule breaches: {{breachType2}}</li>
+			<li *ngIf="breachType3 !== null" class="breadcrumb-item">HPW braches: {{breachType3}}</li>
+		</ol>
+	</div>
+	<div class="col-md-2 col-lg-2 col-lg-offset-2 col-md-offset-2">
+		<button type="button" class="btn btn-info btn-xs pull-right" (click)="clearSelected()">clear selected</button>
+	</div>
+</div>
+
+<p-dataTable *ngIf="selectedBreaches !== null" [value]="selectedBreaches" [alwaysShowPaginator]="false" [responsive]="true" [loading]="loading" loadingIcon="fa-spinner"
+    [rows]="10" [paginator]="selectedBreaches !== null" [pageLinks]="3" [rowsPerPageOptions]="[5,10]" selectionMode="single"
+    [(selection)]="selectedCar" [contextMenu]="cm">
+	<p-header>BREACHES LIST
+		<span class="small">(right click on row for context menu)</span>
+	</p-header>
+	<p-column *ngFor="let col of cols" [field]="col.field" [header]="col.header">
+	</p-column>
+</p-dataTable>
+<p-contextMenu #cm [model]="items"></p-contextMenu>
