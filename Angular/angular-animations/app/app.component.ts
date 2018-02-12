@@ -85,7 +85,7 @@ export class AppComponent implements AfterViewInit, OnInit {
 	animate() {
 		this.state = (this.state = 'small' ? 'large' : 'small')
 	}
-//some comment adde for testing adding some test is necessary
+
 	viewBreach() {
 		alert('View breach event fired')
 	}
