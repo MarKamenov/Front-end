@@ -7,7 +7,7 @@ import { Level2Service } from './level2-service'
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch'
 import { DataTable } from 'primeng/components/datatable/datatable';
-import {scaleItem, listAnim, leftToRight, fallFromTop} from './animations'
+import {scaleItem, listAnim, leftToRight, fallFromTop, boxAnim} from './animations'
 
 @Component({
 	moduleId: module.id,
@@ -15,7 +15,7 @@ import {scaleItem, listAnim, leftToRight, fallFromTop} from './animations'
 	templateUrl: 'acc-demo.html',
 	styleUrls: ['app.component.css'],
 	animations: [
-		scaleItem, listAnim, leftToRight, fallFromTop	
+		scaleItem, listAnim, leftToRight, fallFromTop, boxAnim
 	]
 })
 

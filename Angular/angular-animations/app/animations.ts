@@ -50,3 +50,15 @@ export let fallFromTop = trigger('movePanel', [
 	])
 
 ])
+export let boxAnim = trigger( "boxAnimation",[state("void", style({
+	borderRadius: 50,
+	opacity: 0.0,
+	transform: "rotate( 900deg )"
+})),
+state("*",style({
+	borderRadius: 4,
+	opacity: 1.0,
+	transform: "rotate( 0deg )"
+})),
+transition( "void <=> *",[animate( "1000ms ease-in-out")])
+])

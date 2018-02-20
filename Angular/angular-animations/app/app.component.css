@@ -31,7 +31,7 @@ td.hide {
 button.reset {
 	position: absolute;
 	top: 6px;
-	right:6px
+	right: 6px
 }
 
 div.row.breadcrumb {
@@ -59,7 +59,6 @@ ol.breadcrumb li h5 {
 	margin-top: 0;
 }
 
-
 /*add style to first(summary) table*/
 
 :host>>>p-datatable:first-of-type .ui-datatable tbody>tr.ui-datatable-odd>td:not(:first-child):hover,
@@ -76,13 +75,12 @@ td.children:not(:first-child):hover {
 
 .active {
 	background-color: orangered;
-	color: white!important;
+	color: white !important;
 }
 
 td:active {
 	color: white;
 }
-
 
 /*first level row cells*/
 
@@ -101,8 +99,8 @@ td:active {
 }
 
 :host>>>.ui-datatable tbody>tr.ui-widget-content.ui-datatable-odd.ui-expanded-row span.ui-cell-data,
-:host>>>.ui-datatable tbody>tr.ui-widget-content.ui-datatable-even.ui-expanded-row span.ui-cell-data{
-	color: white 
+:host>>>.ui-datatable tbody>tr.ui-widget-content.ui-datatable-even.ui-expanded-row span.ui-cell-data {
+	color: white
 }
 
 :host>>>.ui-datatable .ui-row-toggler {
@@ -120,4 +118,20 @@ td:active {
 
 :host>>>.ui-datatable .ui-datatable-data>tr.ui-expanded-row-content>td[colspan*="5"] {
 	padding: 0;
+}
+
+div.box {
+	background-color: #262626;
+	border-radius: 4px 4px 4px 4px;
+	color: #FFFFFF;
+	font-size: 20px;
+	height: 100px;
+	left: 50%;
+	line-height: 100px;
+	margin: -50px 0px 0px -50px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left:30%;
+	width: 100px;
 }
