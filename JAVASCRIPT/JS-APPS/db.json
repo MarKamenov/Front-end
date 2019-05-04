@@ -1,0 +1,43 @@
+
+{
+	"data" : {
+		"furniture" : [
+			{
+					"id": 1,
+					"make": "Ikea",
+					"model": "Sofa",
+					"year": 2005,
+					"description": "It is very good sofa",
+					"price": 790,
+					"image": "http://www.ikea.com/us/en/images/products/knislinge-sofa-white__0119786_PE276232_S4.JPG"
+			},
+			{
+					"id": 2,
+					"make": "Ikea",
+					"model": "Chair",
+					"year": 2007,
+					"description": "Comfy chair",
+					"price": 98,
+					"image": "http://www.ikea.com/us/en/images/products/knislinge-sofa-white__0119786_PE276232_S4.JPG"
+			},
+			{
+					"id": 3,
+					"make": "Ikea",
+					"model": "Table",
+					"year": 2006,
+					"description": "Dining table",
+					"price": 249,
+					"image": "http://www.ikea.com/us/en/images/products/knislinge-sofa-white__0119786_PE276232_S4.JPG"
+			},
+			 {
+					"id": 4,
+					"make": "Ikea",
+					"model": "Chess table",
+					"year": 2002,
+					"description": "Chess table",
+					"price": 249,
+					"image": "https://i.pinimg.com/originals/e1/d6/ff/e1d6ffdaa186a2cc18006d4c2729b086.jpg"
+			}
+		]
+	}
+}
