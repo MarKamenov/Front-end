@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { inject, observer } from 'mobx-react';
-import { Box } from 'grid-styled';
+import { Box, Flex } from 'grid-styled';
 import styled from 'styled-components';
 import Furniture from '../store/Furniture';
 
@@ -10,44 +10,58 @@ interface IBasketProps {
 @inject('furniture')
 @observer
 class Basket extends React.Component<IBasketProps> {
+	private tax: number = 0.15;
+
 	constructor(props: IBasketProps) {
 		super(props);
 	}
-
 	get injected() {
 		return this.props as {
 			furniture: Furniture;
 		};
 	}
 
+	public removeFromBasket = () => {
+		this.injected.furniture.selectedItems = [];
+	};
+
 	public render() {
-		const { selectedItems } = this.injected.furniture;
-		const price = selectedItems.reduce((total, item) => total + item.price!, 0);
-		const tax = price * 0.15;
+		const { itemsAdded, totalAmount } = this.injected.furniture;
+
 		return (
-			<Box className={this.props.className}>
-				<Box>Added items: {this.injected.furniture.addedItems}</Box>
-				<h3 style={{ fontWeight: 400 }}>
-					<span>total price:</span>
-					<span className="col-6 text-right">${price}</span>
-				</h3>
-				<h3 style={{ fontWeight: 400 }}>
-					<span>tax (15%):</span>
-					<span className="col-6 text-right">${(price * 0.15).toFixed(2)}</span>
-				</h3>
-				<h3>
-					<span>tota inc tax:{(price + tax).toFixed(2)}</span>
-					<span>$</span>
-				</h3>
-				<Box className="remove_item" onClick={() => null}>
-					remove all<i className="material-icons">remove</i>
-				</Box>
+			<Box p={3} className={this.props.className}>
+				<Flex justifyContent="space-between">
+					<Box>Added items:</Box>
+					<Box>{itemsAdded ? itemsAdded : 0}</Box>
+				</Flex>
+				<Flex justifyContent="space-between">
+					<Box>total price:</Box>
+					<Box ml={2}>${totalAmount}</Box>
+				</Flex>
+				<Flex justifyContent="space-between" mt={2}>
+					<Box>tax (15%):</Box>
+					<Box ml={2}>${totalAmount ? (totalAmount * this.tax).toFixed(2) : 0}</Box>
+				</Flex>
+				<Flex justifyContent="space-between" mt={2}>
+					<Box>total inc tax:</Box>
+					<Box>${totalAmount ? (totalAmount + totalAmount * this.tax).toFixed(2) : 0}</Box>
+				</Flex>
+				<Flex justifyContent="space-between" mt={2}>
+					<Box>remove all</Box>
+					<Box className="remove_item" onClick={() => this.removeFromBasket()}>
+						<i className="material-icons">remove</i>
+					</Box>
+				</Flex>
 			</Box>
 		);
 	}
 }
 
 export default styled(Basket)`
+	background-color: rgb(230, 227, 178);
+	box-shadow: 0px 0px 8px olive;
+	width: 200px;
+	color: #100f0e;
 	.material-icons {
 		cursor: pointer;
 		background: olive;

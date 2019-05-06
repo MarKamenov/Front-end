@@ -36,7 +36,13 @@ class UnstyledHeader extends React.Component<IHeaderProps> {
 					<Flex>
 						<Box className="menu_toggle" onClick={() => ui.toggleCart()}>
 							<ShoppingBasket />
-							<Box className={ui.toggleBasket ? 'open' : 'closed'}>
+							<Box
+								onClick={e => {
+									// don't hide if clicked
+									e.stopPropagation();
+								}}
+								className={ui.toggleBasket ? 'open' : 'closed'}
+							>
 								<Basket />
 							</Box>
 						</Box>
@@ -64,8 +70,6 @@ const Header = styled(UnstyledHeader)`
 	}
 	.closed,
 	.open {
-		/* width:500px; */
-		/* height:200px; */
 		list-style-type: none;
 		box-shadow: 0px 0px 3px #888888;
 		position: absolute;

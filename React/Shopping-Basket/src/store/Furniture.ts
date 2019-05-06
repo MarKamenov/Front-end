@@ -3,7 +3,6 @@ import { furnitureResponse } from '../data/data';
 import { IFurnitureResponse } from '../types';
 export default class FurnitureStore {
 	@observable public list: IFurnitureResponse[] = [];
-	@observable public addedItems: number = 0;
 	@observable public quantity: number = 1;
 	@observable public selectedItems: IFurnitureResponse[] = [];
 
@@ -18,7 +17,26 @@ export default class FurnitureStore {
 	}
 
 	@computed
-	get itemsAdded(): number {
-		return this.addedItems;
+	get itemsAdded() {
+		return this.selectedItems.length;
+	}
+
+	@computed
+	get totalAmount() {
+		const price = this.selectedItems.reduce((total, item) => total + item.price!, 0);
+		return price;
+	}
+
+	@action.bound
+	public addToCart(product: IFurnitureResponse) {
+		this.selectedItems.push(product);
+	}
+
+	@action.bound
+	public removeFromChart(product: IFurnitureResponse) {
+		const index = this.selectedItems.indexOf(product);
+		if (index >= 0) {
+			this.selectedItems.splice(index, 1);
+		}
 	}
 }

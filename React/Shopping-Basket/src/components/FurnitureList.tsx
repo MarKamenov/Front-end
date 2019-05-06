@@ -4,6 +4,7 @@ import { Flex, Box } from 'grid-styled';
 import styled from 'styled-components';
 import Furniture from '../store/Furniture';
 import ItemsList from './ItemsList';
+import { IFurnitureResponse } from 'src/types';
 
 interface IFurnitureListProps {
 	className?: string;
@@ -25,20 +26,12 @@ class FurnitureList extends React.Component<IFurnitureListProps> {
 		this.injected.furniture.fetchFurniture();
 	}
 
-	public addToBasket = (id: number) => {
-		this.injected.furniture.addedItems += 1;
-		const addedItem = this.injected.furniture.list.find(item => item.id === id);
-		const existedItem = this.injected.furniture.selectedItems.find(item => item.id === id);
-		if (existedItem) {
-			this.injected.furniture.quantity += 1;
-		} else if (addedItem) {
-			this.injected.furniture.quantity = 1;
-			this.injected.furniture.selectedItems.push(addedItem);
-		}
+	public addToBasket = (product: IFurnitureResponse) => {
+		this.injected.furniture.addToCart(product);
 	};
 
-	public removeFromBasket = () => {
-		this.injected.furniture.addedItems -= 1;
+	public removeFromBasket = (product: IFurnitureResponse) => {
+		this.injected.furniture.removeFromChart(product);
 	};
 
 	public render() {
@@ -47,7 +40,9 @@ class FurnitureList extends React.Component<IFurnitureListProps> {
 			<Box className={this.props.className}>
 				<h3 className="center">Our items</h3>
 				<Flex flexWrap="wrap">
-					{list.map(item => <ItemsList key={item.id} item={item} onAdd={this.addToBasket} />)}
+					{list.map(item => (
+						<ItemsList key={item.id} item={item} onAdd={this.addToBasket} onRemove={this.removeFromBasket} />
+					))}
 				</Flex>
 			</Box>
 		);

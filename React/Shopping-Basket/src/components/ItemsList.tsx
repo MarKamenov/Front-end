@@ -5,28 +5,28 @@ import styled from 'src/theme';
 
 interface IFurnitureItems {
 	className?: string;
-	onAdd: (id: number) => void;
+	onAdd: (product: IFurnitureResponse) => void;
+	onRemove: (product: IFurnitureResponse) => void;
 	item: IFurnitureResponse;
 }
 
 const UnstyledItemsList = (props: IFurnitureItems) => {
-	const {
-		onAdd,
-		className,
-		item: { id, image, model, make, price },
-	} = props;
-	const addedItemPrice = () => onAdd(id);
+	const { onAdd, onRemove, className, item } = props;
+	// const addedItemPrice = () => onAdd(item);
 	return (
 		<Box p={1} m={3} className={className}>
 			<Flex className="item_wrapper" flexDirection="column">
-				<img src={image} alt={model} />
+				<img src={item.image} alt={item.model} />
 				<Flex mt={1} flexDirection="row" alignItems="center" flexWrap="wrap" justifyContent="space-between">
-					<Box className="card-title">{make}</Box>
-					<Box>{model}</Box>
+					<Box className="card-title">{item.make}</Box>
+					<Box>{item.model}</Box>
 					<Box>
-						<b>Price: {price}$</b>
+						<b>Price: {item.price}$</b>
 					</Box>
-					<Box className="add_item" onClick={addedItemPrice}>
+					<Box className="remove_item" onClick={() => onRemove(item)}>
+						<i className="material-icons">remove</i>
+					</Box>
+					<Box className="add_item" onClick={() => onAdd(item)}>
 						<i className="material-icons">add</i>
 					</Box>
 				</Flex>
