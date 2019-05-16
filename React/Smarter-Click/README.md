@@ -14,7 +14,7 @@ Folder Structure After creation, your project should look like this:
 
 These files must exist with exact filenames:
 
-public/index.html is the page template; src/index.js is the JavaScript entry point. Available Scripts In the project directory, you can run:
+public/index.html is the page template; src/index.js or if using typescipt index.tsx is the JavaScript entry point. Available Scripts In the project directory, you can run:
 
 npm start Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.
 
