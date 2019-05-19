@@ -1,4 +1,4 @@
-# Responsve app (Frontend)
+# Responsive app (Frontend)
 
 ### Introduction 
 Simple SPA based off the provided mockup and make a few API calls to a public web API.
