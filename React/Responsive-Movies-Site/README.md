@@ -20,7 +20,7 @@ create-react-app is a global command-line utility that you use to create new pro
 
 When you run create-react-app, it always creates the project with the latest version of react-scripts so you’ll get all the new features and improvements in newly created apps automatically.
 
-For routing we use react-router-dom.
+We can run npm test to run tests. testing is still in progress.
 
 For state management we use Mobxjs
  
