@@ -10,8 +10,6 @@ When you run create-react-app, it always creates the project with the latest ver
 
 For routing we use react-router-dom.
 
-Folder Structure After creation, your project should look like this:
-
 These files must exist with exact filenames:
 
 public/index.html is the page template; src/index.js or if using typescipt index.tsx is the JavaScript entry point. Available Scripts In the project directory, you can run:
