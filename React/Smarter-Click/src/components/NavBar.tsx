@@ -46,7 +46,7 @@ class UnstyledNavBar extends React.Component<INavBarProps, IMenuState> {
 }
 
 const NavBar = styled(UnstyledNavBar)`
-	background-color: ${props => props.theme.foregroundFourth}
+	background-color: ${props => props.theme.foregroundFourth};
 	position: absolute;
   bottom: 50px;
   right: 70px;
