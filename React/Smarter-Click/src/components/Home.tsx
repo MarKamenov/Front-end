@@ -10,7 +10,7 @@ export interface IHomeProps {
 const HomePage: React.SFC<IHomeProps> = ({className}) => (
 		<Flex className={className} flexDirection='column' justifyContent='center'>
        <h1 style={{backgroundColor:"#7EA0B7", marginTop:"0"}}><img role="img" src={smart} alt="logo"/></h1>
-      <h2>Welcome to home page</h2>
+      <h2>Smarter Click</h2>
 		</Flex>
 );
 
