@@ -12,7 +12,6 @@ interface IFurnitureItems {
 
 const UnstyledItemsList = (props: IFurnitureItems) => {
 	const { onAdd, onRemove, className, item } = props;
-	// const addedItemPrice = () => onAdd(item);
 	return (
 		<Box p={1} m={3} className={className}>
 			<Flex className="item_wrapper" flexDirection="column">

@@ -8,9 +8,6 @@ import UI from '../store/Ui';
 
 export interface IHeaderProps {
 	className?: string;
-	// hamburgerMenu: JSX.Element;
-	// logo: JSX.Element;
-	// accountMenu: JSX.Element;
 }
 @inject('ui')
 @observer
