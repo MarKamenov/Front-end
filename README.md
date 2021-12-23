@@ -1,2 +1,2 @@
 # Front-end
-Many front-end examples using: Html5, Css3, Responsive design, Bootstrap3, Flexbox, Js SPA, Angular2, React, Mobx 
+Many front-end examples using: Html5, Css3, Bootstrap3, Flexbox, Angular2, React, Mobx 
