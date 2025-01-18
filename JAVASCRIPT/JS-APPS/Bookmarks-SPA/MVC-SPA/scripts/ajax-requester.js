@@ -1,17 +1,17 @@
-var app = app || {};
+const app = app || {};
 
-app.ajaxRequester = (function(){
+app.ajaxRequester = (function () {
 	function AjaxRequester() {
 		this.get = makeGetRequest;
 		this.post = makePostRequest;
 		this.put = makePutRequest;
 		this.delete = makeDeleteRequest;
 	}
-	var makeRequest = function (url, method, data, headers) {
-		var defer = Q.defer();
+	const makeRequest = function (url, method, data, headers) {
+		const defer = Q.defer();
 
 		$.ajax({
-			url:url,
+			url: url,
 			method: method,
 			contentType: 'application/json',
 			data: JSON.stringify(data) || undefined,
@@ -26,16 +26,16 @@ app.ajaxRequester = (function(){
 
 		return defer.promise;
 	}
-	var makeGetRequest = function (url, headers) {
+	const makeGetRequest = function (url, headers) {
 		return makeRequest(url, 'GET', null, headers);
 	}
-	var makePostRequest = function (url, data, headers) {
+	const makePostRequest = function (url, data, headers) {
 		return makeRequest(url, 'POST', data, headers);
 	}
-	var makePutRequest = function (url, data, headers) {
+	const makePutRequest = function (url, data, headers) {
 		return makeRequest(url, 'PUT', data, headers);
 	}
-	var makeDeleteRequest = function (url, headers) {
+	const makeDeleteRequest = function (url, headers) {
 		return makeRequest(url, 'DELETE', null, headers);
 	}
 	return {

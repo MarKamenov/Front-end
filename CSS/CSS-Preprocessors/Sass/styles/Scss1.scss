@@ -1,48 +1,49 @@
-@mixin linear-gradient ($from, $to,$repeat:no-repeat) {
-    background-image: -webkit-linear-gradient(top, $from, $to);
-    background-image: -moz-linear-gradient(top, $from, $to);
-    background-image: -ms-linear-gradient(top, $from, $to);
-    background-image: -o-linear-gradient(top, $from, $to);
-    background-image: linear-gradient(to bottom, $from, $to);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$from}', endColorstr='#{$to}',GradientType=0 );
-	background-repeat:no-repeat;
+@mixin linear-gradient ($from, $to, $repeat: no-repeat) {
+  background-image: -webkit-linear-gradient(top, $from, $to);
+  background-image: -moz-linear-gradient(top, $from, $to);
+  background-image: -ms-linear-gradient(top, $from, $to);
+  background-image: -o-linear-gradient(top, $from, $to);
+  background-image: linear-gradient(to bottom, $from, $to);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}', GradientType=0);
+  background-repeat: no-repeat;
 }
 
 @mixin gradient($path, $direction, $start, $end) {
-  @if $path == 'linear' {
+  @if $path =='linear' {
     background: linear-gradient(to $direction, $start, $end);
   }
+
   @else {
     background: radial-gradient($start, $end);
   }
 }
 
-@mixin box($border:none,$padding:10px,$marg-bo:10px) {
-	border:$border;
-    padding:$padding;
-    margin-bottom:$marg-bo;
+@mixin box($border: none, $padding: 10px, $marg-bo: 10px) {
+  border: $border;
+  padding: $padding;
+  margin-bottom: $marg-bo;
 }
 
 @mixin same-size($width, $height: $width) {
-      width: $width;
-      height: $height;
+  width: $width;
+  height: $height;
 }
 
 $border-frame: 3px solid #ccc;
-$margin-auto:0 auto;
-$default-width:960px;
-$txt-center:center;
-$list-sty:none;
+$margin-auto: 0 auto;
+$default-width: 960px;
+$txt-center: center;
+$list-sty: none;
 $article-brd : 1px solid #bbb;
-$article-fon-sz:10px;
+$article-fon-sz: 10px;
 
-body
-{
+body {
   width: $default-width;
   margin: $margin-auto;
-  @include linear-gradient(#aaa,#fff);
+  @include linear-gradient(#aaa, #fff);
   font-family: Tahoma, sans-serif;
   color: #aaa;
+
   #wrapper {
     width: 75%;
     margin: $margin-auto;
@@ -50,168 +51,210 @@ body
     border: $border-frame;
     padding: 15px;
     text-align: $txt-center;
-        header {
-            border: $border-frame;         
-            margin-bottom: 10px;
-            h1{
-               margin: 10px 0;
+
+    header {
+      border: $border-frame;
+      margin-bottom: 10px;
+
+      h1 {
+        margin: 10px 0;
+      }
+
+      ul {
+        padding: 0; //da se premesti
+        list-style-type: $list-sty;
+
+        li {
+          display: inline-block;
+          margin: 0 20px; //ovde treba korekcija
+          border: $border-frame;
+
+          a {
+            font-size: 12px;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #bbb;
+            display: block;
+          }
+
+          &:hover {
+            & a {
+              @include linear-gradient(#aaa, #fff);
+              color: white;
             }
-            ul{
-              padding: 0;//da se premesti
-              list-style-type:$list-sty;
-              li{
-                display: inline-block;
-                margin: 0 20px;//ovde treba korekcija
-                border:$border-frame;
-                a{
-                 font-size: 12px;
-                 padding:10px 20px;
-                 font-weight: bold;
-                 text-decoration: none;
-                 color: #bbb;
-                 display:block;
-                }
-               &:hover{                  
-                    & a{
-                       @include linear-gradient(#aaa,#fff);
-                       color: white;
-                  }
-                }
-              }
-            }
-           }
-        section{
-             @include box($border-frame);
-            #linear{
-                margin: 0;
-                padding: 0;
-                border: none;
-                font-size: 12px;
-                text-decoration: underline;
-            }
-            #radial{
-                 @extend #linear;
-            }
-            article{
-                @extend section;
-                .innerContainer{
-                    font-size:0;//fix childs distance
-                    div{
-                        @include same-size(180px);
-                        border-radius: 15px;
-                        display: inline-block;
-                    }
-                
-                }
-            }       
+          }
         }
-        .linear{
-            font-size:$article-fon-sz;
-            article{
-                border: $article-brd;
-                &:nth-child(2){
-                    .purple {
-          @include gradient(linear, bottom, purple, #fff)
+      }
+    }
+
+    section {
+      @include box($border-frame);
+
+      #linear {
+        margin: 0;
+        padding: 0;
+        border: none;
+        font-size: 12px;
+        text-decoration: underline;
+      }
+
+      #radial {
+        @extend #linear;
+      }
+
+      article {
+        @extend section;
+
+        .innerContainer {
+          font-size: 0; //fix childs distance
+
+          div {
+            @include same-size(180px);
+            border-radius: 15px;
+            display: inline-block;
+          }
+
         }
-        .blue {
-          @include gradient(linear, bottom, blue, #fff)
+      }
+    }
+
+    .linear {
+      font-size: $article-fon-sz;
+
+      article {
+        border: $article-brd;
+
+        &:nth-child(2) {
+          .purple {
+            @include gradient(linear, bottom, purple, #fff)
+          }
+
+          .blue {
+            @include gradient(linear, bottom, blue, #fff)
+          }
+
+          .green {
+            @include gradient(linear, bottom, green, #fff)
+          }
+
+          .yellow {
+            @include gradient(linear, bottom, yellow, #fff)
+          }
+
+          .orange {
+            @include gradient(linear, bottom, orange, #fff)
+          }
+
+          .red {
+            @include gradient(linear, bottom, red, #fff)
+          }
         }
-        .green {
-          @include gradient(linear, bottom, green, #fff)
+
+        &:nth-child(3) {
+          .purple {
+            @include gradient(linear, right, purple, #fff)
+          }
+
+          .blue {
+            @include gradient(linear, right, blue, #fff)
+          }
+
+          .green {
+            @include gradient(linear, right, green, #fff)
+          }
+
+          .yellow {
+            @include gradient(linear, right, yellow, #fff)
+          }
+
+          .orange {
+            @include gradient(linear, right, orange, #fff)
+          }
+
+          .red {
+            @include gradient(linear, right, red, #fff)
+          }
         }
-        .yellow {
-          @include gradient(linear, bottom, yellow, #fff)
-        }
-        .orange {
-          @include gradient(linear, bottom, orange, #fff)
-        }
-        .red {
-          @include gradient(linear, bottom, red, #fff)
-        }
-                }
-                &:nth-child(3) {
-        .purple {
-          @include gradient(linear, right, purple, #fff)
-        }
-        .blue {
-          @include gradient(linear, right, blue, #fff)
-        }
-        .green {
-          @include gradient(linear, right, green, #fff)
-        }
-        .yellow {
-          @include gradient(linear, right, yellow, #fff)
-        }
-        .orange {
-          @include gradient(linear, right, orange, #fff)
-        }
-        .red {
-          @include gradient(linear, right, red, #fff)
+
+        &:nth-child(4) {
+          .purple {
+            @include gradient(linear, right bottom, purple, #fff)
+          }
+
+          .blue {
+            @include gradient(linear, right bottom, blue, #fff)
+          }
+
+          .green {
+            @include gradient(linear, right bottom, green, #fff)
+          }
+
+          .yellow {
+            @include gradient(linear, right bottom, yellow, #fff)
+          }
+
+          .orange {
+            @include gradient(linear, right bottom, orange, #fff)
+          }
+
+          .red {
+            @include gradient(linear, right bottom, red, #fff)
+          }
         }
       }
 
-      &:nth-child(4) {
-        .purple {
-          @include gradient(linear, right bottom, purple, #fff)
-        }
-        .blue {
-          @include gradient(linear, right bottom, blue, #fff)
-        }
-        .green {
-          @include gradient(linear, right bottom, green, #fff)
-        }
-        .yellow {
-          @include gradient(linear, right bottom, yellow, #fff)
-        }
-        .orange {
-          @include gradient(linear, right bottom, orange, #fff)
-        }
-        .red {
-          @include gradient(linear, right bottom, red, #fff)
-        }
-      }
-     }
+    }
 
-        }
-        .radial{
-                font-size:$article-fon-sz;
-                article{
-                    .purple {
+    .radial {
+      font-size: $article-fon-sz;
+
+      article {
+        .purple {
           @include gradient (radial, right bottom, purple, #fff)
         }
+
         .blue {
           @include gradient(radial, right bottom, blue, #fff)
         }
+
         .green {
           @include gradient(radial, right bottom, green, #fff)
         }
+
         .yellow {
           @include gradient(radial, right bottom, yellow, #fff)
         }
+
         .orange {
           @include gradient(radial, right bottom, orange, #fff)
         }
+
         .red {
           @include gradient(radial, right bottom, red, #fff)
         }
-                }
-        }
-         footer{
-               @include box($border-frame);
-                h3{
-                  font-size: 18px;
-                  font-weight: 900;
-                  text-decoration: underline;
-                }
-                ul{
-                    padding:0;//da se premesti
-                    list-style-type:$list-sty;
-                      a{
-                        text-decoration: none;
-                        color: #aaa;
-                        font-size: 12px;
-                      }
-                  }
-         }
+      }
     }
+
+    footer {
+      @include box($border-frame);
+
+      h3 {
+        font-size: 18px;
+        font-weight: 900;
+        text-decoration: underline;
+      }
+
+      ul {
+        padding: 0; //da se premesti
+        list-style-type: $list-sty;
+
+        a {
+          text-decoration: none;
+          color: #aaa;
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }

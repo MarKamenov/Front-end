@@ -1,16 +1,16 @@
 'use strict'
 
-var userSession = {
-	login: function(data){
+const userSession = {
+	login: function (data) {
 		sessionStorage['currentUser'] = JSON.stringify(data);
 	},
-	getCurrentUser: function(data){
-		var userData = sessionStorage['currentUser'];
-		if(userData){
+	getCurrentUser: function (data) {
+		const userData = sessionStorage['currentUser'];
+		if (userData) {
 			return JSON.parse(sessionStorage['currentUser']);
 		}
 	},
-	logout: function(){
+	logout: function () {
 		delete sessionStorage['currentUser'];
-	}	
+	}
 }

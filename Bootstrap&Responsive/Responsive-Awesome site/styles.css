@@ -16,7 +16,8 @@
   padding: 0;
 }
 
-html, body { 
+html,
+body {
   height: 100%;
 }
 
@@ -28,7 +29,12 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 100%;
 }
 
@@ -37,11 +43,12 @@ h1 {
   margin-bottom: 1em;
 }
 
-p { 
+p {
   margin: 1em 0;
 }
 
-ul, ol {
+ul,
+ol {
   list-style-position: outside;
 }
 
@@ -63,11 +70,12 @@ blockquote {
   padding-left: 0.2em;
 }
 
-th, td {
+th,
+td {
   padding: 0 2em 1em 0;
 }
 
-img { 
+img {
   width: 36em;
 }
 
@@ -95,7 +103,7 @@ a:hover {
 /*
 /*****************************************************************************/
 
-.post-index hr{
+.post-index hr {
   margin: 2em 0;
 }
 
@@ -110,7 +118,7 @@ a:hover {
 .post .title a {
   text-decoration: none;
   color: #000;
-  transition: color 0.075s; 
+  transition: color 0.075s;
 }
 
 .post .title a:hover {
@@ -124,9 +132,6 @@ a:hover {
   color: #aaa;
 }
 
-.post .excerpt {
-
-}
 /*****************************************************************************/
 /*
 /* Site
@@ -155,7 +160,7 @@ a:hover {
 
 .banner {
   background: #E05E43;
-  color:      #FFF;
+  color: #FFF;
   text-align: center;
 }
 
@@ -197,16 +202,16 @@ a:hover {
 }
 
 .header a.highlight {
-	color: white;
-	background: tomato;
-	padding: 6px 10px;
+  color: white;
+  background: tomato;
+  padding: 6px 10px;
 }
 
 .icon-heart {
-  font-family: FontAwesome;
+  font-family: FontAwesome, sans-serif;
   font-size: 90%;
   color: #a00;
-} 
+}
 
 .site .meta {
   color: #aaa;
@@ -231,10 +236,10 @@ a:hover {
   margin: 0 auto;
 }
 
-.footer .navigation { 
+.footer .navigation {
   list-style-type: none;
   text-align: center;
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
 }
 
 .footer .navigation li {
@@ -243,7 +248,7 @@ a:hover {
 
 .footer a {
   text-decoration: none;
-  color: #555; 
+  color: #555;
 }
 
 .footer a.extra {
@@ -260,27 +265,49 @@ a:hover {
   background: #aaa;
 }
 
-.footer .location, .footer .email { 
-  font-size: 0.75em; 
-  color: #555; 
+.footer .location,
+.footer .email {
+  font-size: 0.75em;
+  color: #555;
 }
 
-.footer .location span, .footer .email {
+.footer .location span,
+.footer .email {
   transition: color 0.075s;
 }
 
-.footer .location a:hover, .footer .email:hover {
+.footer .location a:hover,
+.footer .email:hover {
   color: #aaa;
 }
 
-.footer .location {margin-bottom: 1em;}
+.footer .location {
+  margin-bottom: 1em;
+}
 
-.left {float: left;}
-.right {float: right;}
-.text-left {text-align: left;}
-.text-right {text-align: right;}
-.text-center {text-align: center;}
-.break {height: 1em;}
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.break {
+  height: 1em;
+}
 
 /*****************************************************************************/
 /*
@@ -323,11 +350,13 @@ a:hover {
 /*****************************************************************************/
 
 @media only screen and (max-width: 568px) {
-  .site .container, .footer .foot-body {
+
+  .site .container,
+  .footer .foot-body {
     width: auto;
   }
 
-  img { 
+  img {
     width: 100%;
   }
 
@@ -343,7 +372,7 @@ a:hover {
 
   .header .navigation li {
     display: inline-block;
-	text-align: left;
+    text-align: left;
   }
 
   .footer .navigation li {
@@ -364,10 +393,15 @@ a:hover {
     padding-left: 1em;
   }
 
-  table, thead, tbody, th, tr, td {
-    display: block; 
+  table,
+  thead,
+  tbody,
+  th,
+  tr,
+  td {
+    display: block;
   }
-  
+
   thead tr {
     position: absolute;
     left: -9999px;
@@ -385,18 +419,18 @@ a:hover {
     padding-right: 0;
   }
 
-  td:nth-of-type(1):before{
+  td:nth-of-type(1):before {
     display: inline-block;
     width: 4em;
     content: "When: ";
     font-weight: bold;
   }
 
-  td:nth-of-type(2){
+  td:nth-of-type(2) {
     padding-left: 4em;
   }
 
-  td:nth-of-type(3):before{
+  td:nth-of-type(3):before {
     display: inline-block;
     width: 4em;
     content: "What: ";
@@ -407,11 +441,11 @@ a:hover {
     padding: 0;
   }
 
-  tr:nth-of-type(odd){
+  tr:nth-of-type(odd) {
     background: #eeeeef;
   }
 
-  tr:nth-of-type(even){
+  tr:nth-of-type(even) {
     color: #000;
   }
 }

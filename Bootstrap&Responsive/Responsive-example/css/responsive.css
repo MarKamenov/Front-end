@@ -25,20 +25,20 @@ div.nav ul li {
 }
 
 @media screen and (max-width: 500px) {
-	
+
 	div.nav ul li {
 		width: 50%;
 		font-size: 85%;
 	}
-	
+
 	div.mobile-collapse {
 		width: auto;
 		float: none;
 		margin-right: 0;
 	}
-	
+
 	.hide-mobile {
 		display: none;
 	}
-		
+
 }

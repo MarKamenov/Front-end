@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { getReactRepositories } from '../index'
-import  ReposList  from '../ReposList';
+import ReposList from '../ReposList';
 import styled from '../Theme'
 import { withExpand } from './HocExpand'
 
 const MAX_ITEMS = 4;
 
 class UnstyledHocApp extends Component {
-	constructor(props){
+	constructor(props) {
 		super(props)
 		this.state = {
 			repos: [],
@@ -16,25 +16,25 @@ class UnstyledHocApp extends Component {
 
 	async componentDidMount() {
 		const repos = await getReactRepositories()
-		this.setState({repos})
+		this.setState({ repos })
 	}
 
 	getRenderedItems = () => {
 		const initRepos = this.state.repos.slice(0, MAX_ITEMS);
 		return this.props.expanded ? initRepos : initRepos.slice(0, this.props.reposToShow)
-  }
+	}
 
-  render() {
+	render() {
 		const { className, expanded, collapse, expand } = this.props
-    return (
+		return (
 			<>
-			<ReposList data={this.getRenderedItems()}/>	
-			<button className={className} onClick={expanded ? collapse: expand}>
-          {expanded ? 'See less':'See more'}
-      </button>
+				<ReposList data={this.getRenderedItems()} />
+				<button className={className} onClick={expanded ? collapse : expand}>
+					{expanded ? 'See less' : 'See more'}
+				</button>
 			</>
-    );
-  }
+		);
+	}
 }
 
 const HocApp = styled(UnstyledHocApp)`

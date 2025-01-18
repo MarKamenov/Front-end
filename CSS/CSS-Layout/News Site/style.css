@@ -1,67 +1,82 @@
-*{
-    margin:0;
-	padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
-body{
-    background-color:#f0f8ff;
-	font-size:15px;
+
+body {
+    background-color: #f0f8ff;
+    font-size: 15px;
 }
-div#container{
-    background-color:#1e3741;
-	margin:20px auto;
-	border-radius:5px;
-	width:610px;
-	height:350px;
-	border: 1px solid #357484;
+
+div#container {
+    background-color: #1e3741;
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 610px;
+    height: 350px;
+    border: 1px solid #357484;
 }
-header nav{
-    padding:10px;
+
+header nav {
+    padding: 10px;
 }
-ul{
-    list-style-type:none;
+
+ul {
+    list-style-type: none;
 }
+
 header nav ul li {
     background-color: #4B5F67;
     display: inline-block;
 }
-nav ul li a{
-    display:block;
-	padding:5px;                                         
-}	
-a{
-    text-decoration:none;
-	color: #768d96;;
+
+nav ul li a {
+    display: block;
+    padding: 5px;
 }
+
+a {
+    text-decoration: none;
+    color: #768d96;
+    ;
+}
+
 /*header nav ul li:hover{
 	 background-color:transparent;
 }*/
 header nav ul li.current {
-    background-color:transparent;
+    background-color: transparent;
 }
+
 /*header nav ul li a:hover{
 	color:#FFFFFF;
 }*/
-header nav ul li.current a{
-    color:#FFFFFF;
+header nav ul li.current a {
+    color: #FFFFFF;
 }
+
 .news {
     float: left;
 }
-img.mainPic{
-    border:none;
-	height:270px;
-	width:310px;
+
+img.mainPic {
+    border: none;
+    height: 270px;
+    width: 310px;
 }
- p.top a{
-    border-bottom:1px solid #2e444e;
-    display:block;	
-	padding:10px;
+
+p.top a {
+    border-bottom: 1px solid #2e444e;
+    display: block;
+    padding: 10px;
 }
-p.top a{
-     background-color: #00968c;
-    color:whitesmoke;
-	
+
+p.top a {
+    background-color: #00968c;
+    color: whitesmoke;
+
 }
+
 /*p.top a:hover{
      background-color: #00968c;
     color:whitesmoke;
@@ -70,17 +85,20 @@ p.top a{
 article {
     display: block;
     width: 235px;
-	border-bottom:1px solid #2e444e;
-	padding-top:8px;
-	padding-bottom:8px;
+    border-bottom: 1px solid #2e444e;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
-article:last-of-type{
-    border-bottom:none;
+
+article:last-of-type {
+    border-bottom: none;
 }
-article p a{
-display:block;
+
+article p a {
+    display: block;
 }
+
 article p a:hover {
     background-color: #00968c;
-    color:whitesmoke;
+    color: whitesmoke;
 }

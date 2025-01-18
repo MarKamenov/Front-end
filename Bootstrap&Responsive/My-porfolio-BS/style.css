@@ -1,80 +1,95 @@
-html{
+html {
 	font: 16px/130% Arial, Helvetica, sans-serif;
 }
-body{
-padding-top:51px;
+
+body {
+	padding-top: 51px;
 }
+
 .checkbox label {
-	color:#9d9d9d;
+	color: #9d9d9d;
 }
-.checkbox label:hover{
-	color:#fff;
+
+.checkbox label:hover {
+	color: #fff;
 }
+
 #features {
 	text-align: center;
 }
-#features img{
-	margin:10px 0 10px;
-	width:140px ;
-	height:140px;
+
+#features img {
+	margin: 10px 0 10px;
+	width: 140px;
+	height: 140px;
 }
 
 #myCarousel {
 	margin-top: 50px;
 }
-#featuresHeading{
-font-family: 'Francois One', sans-serif;
-padding-top:20px;
-padding-bottom:20px;
-}
-.btn-group-lg>.btn, .btn-lg{
-	margin-top:10px;
-}
-#social{
-	padding-top: 30px;
-    padding-bottom: 50px;
-    background-color: #f2f2f2;
-	}
-#social div.social-icon{
-	margin-top:20px;
+
+#featuresHeading {
+	font-family: 'Francois One', sans-serif;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
-#social i{
-	font-size:2.5em;
-	color:#4a4a4a;
+.btn-group-lg>.btn,
+.btn-lg {
+	margin-top: 10px;
 }
-#social i:hover{
-	color:black;
+
+#social {
+	padding-top: 30px;
+	padding-bottom: 50px;
+	background-color: #f2f2f2;
+}
+
+#social div.social-icon {
+	margin-top: 20px;
+}
+
+#social i {
+	font-size: 2.5em;
+	color: #4a4a4a;
+}
+
+#social i:hover {
+	color: black;
 	text-shadow: 0px 0px 3px white;
 }
-footer{
-	background-color:#2f2f2f;
+
+footer {
+	background-color: #2f2f2f;
 	padding: 20px;
-	color:#9d9d9d;
+	color: #9d9d9d;
 }
-footer a{
-	color:#9d9d9d;
+
+footer a {
+	color: #9d9d9d;
 }
-footer a:hover{
-	 color:#fff;
+
+footer a:hover {
+	color: #fff;
 }
-@media only screen and (max-width: 768px){
-	body #wrapper{
+
+@media only screen and (max-width: 768px) {
+	body #wrapper {
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 	}
 
-    #myCarousel {
-	margin-top: 0;
-}
+	#myCarousel {
+		margin-top: 0;
+	}
 
 	.carousel-inner .carousel-caption {
-		font-size:.7rem;
-		
+		font-size: .7rem;
+
 	}
-	
+
 	.carousel-inner .carousel-caption h2 {
-		font-size:.9rem;
-		margin-bottom:3px;		
-   }
+		font-size: .9rem;
+		margin-bottom: 3px;
+	}
 }

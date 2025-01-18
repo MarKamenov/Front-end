@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { getReactRepositories } from '../index'
-import  ReposList  from '../ReposList';
+import ReposList from '../ReposList';
 import styled from '../Theme'
 import { WithLoader } from './HocLoader'
 import { withExpand } from '../Task2/HocExpand'
@@ -14,32 +14,32 @@ class UnstyledHocLoading extends Component {
 		super(props)
 		this.state = {
 			repos: [],
-			loading:false
+			loading: false
 		}
 	}
 
 	async componentDidMount() {
 		this.setState({ loading: true });
 		const repos = await getReactRepositories()
-		this.setState({ repos, loading:false })
+		this.setState({ repos, loading: false })
 	}
 
 	getRenderedItems = () => {
 		const initRepos = this.state.repos.slice(0, MAX_ITEMS);
 		return this.props.expanded ? initRepos : initRepos.slice(0, this.props.reposToShow)
-  }
+	}
 
-  render() {
+	render() {
 		const { className, expanded, collapse, expand } = this.props
-    return (
+		return (
 			<div className={className}>
-			<ListWithLoading data={this.getRenderedItems()} isLoading={this.state.loading}/>
-			<button onClick={expanded ? collapse: expand}>
-          {expanded ? 'See less':'See more'}
-      </button>
+				<ListWithLoading data={this.getRenderedItems()} isLoading={this.state.loading} />
+				<button onClick={expanded ? collapse : expand}>
+					{expanded ? 'See less' : 'See more'}
+				</button>
 			</div>
-    );
-  }
+		);
+	}
 }
 
 const HocLoading = styled(UnstyledHocLoading)`

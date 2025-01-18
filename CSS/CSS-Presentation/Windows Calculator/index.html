@@ -1,149 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <title>Calculator </title>   
+    <title>Calculator </title>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-	<div id="wrapper">
-		<header>
-		   <p>
-		   <img src="image/calculator.png" alt="calculator">
-		   <span>Calculator</span>
-		   <img id="right" src="image/corner.png">
-		   </p>
-		</header>
-	<div id="main">
-		<nav>
-            <ul>
-                <li><p>View</p></li>
-                <li><p>View</p></li>
-                <li><p>View</p></li>
-            </ul>
-		</nav>
-		        <div id="output">
-			        <p>8854455</p>
-		        </div>
-		<div id="first">
-            <table id="upper_tb">
-                <tr>
-                    <td>0000</td>
-                    <td>0000</td>
-                    <td>0000</td>
-                    <td>0000</td>
-                    <td>0000</td>
-                    <td>0000</td>
-                    <td>0000</td>
-                    <td>0000</td>
-                </tr>
-                <tr id="color">
-                    <td colspan="4">63</td>
-                    <td colspan="3">47</td>
-                    <td>32</td>
-                </tr>
-                <tr>
-                    <td>0000</td>
-                    <td>0000</td>
-                    <td>1000</td>
-                    <td>0111</td>
-                    <td>0001</td>
-                    <td>1011</td>
-                    <td>1011</td>
-                    <td>0111</td>
-                </tr>
-                <tr id="color">
-                    <td colspan="4">31</td>
-                    <td colspan="3">15</td>
-                    <td>0</td>
-                </tr>
-            </table>
-        </div>
-        <div id="second">
-            <div id="forms">                                   
+    <div id="wrapper">
+        <header>
+            <p>
+                <img src="image/calculator.png" alt="calculator">
+                <span>Calculator</span>
+                <img id="right" src="image/corner.png" alt="corner">
+            </p>
+        </header>
+        <div id="main">
+            <nav>
+                <ul>
+                    <li>
+                        <p>View</p>
+                    </li>
+                    <li>
+                        <p>View</p>
+                    </li>
+                    <li>
+                        <p>View</p>
+                    </li>
+                </ul>
+            </nav>
+            <div id="output">
+                <p>8854455</p>
+            </div>
+            <div id="first">
+                <table id="upper_tb">
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr id="color">
+                        <td colspan="4">63</td>
+                        <td colspan="3">47</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>1000</td>
+                        <td>0111</td>
+                        <td>0001</td>
+                        <td>1011</td>
+                        <td>1011</td>
+                        <td>0111</td>
+                    </tr>
+                    <tr id="color">
+                        <td colspan="4">31</td>
+                        <td colspan="3">15</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="second">
+                <div id="forms">
                     <form>
                         <input type="radio" name="numeralBase" value="hex" />Hex<br />
                         <input type="radio" name="numeralBase" value="dec" checked="checked" />Dec<br />
                         <input type="radio" name="numeralBase" value="oct" />Oct<br />
                         <input type="radio" name="numeralBase" value="bin" />Bin
-                    </form> 
-					
+                    </form>
+
                     <form>
                         <input type="radio" name="wordSize" value="qword" checked="checked" />Qword<br />
                         <input type="radio" name="wordSize" value="dword" />Dword<br />
                         <input type="radio" name="wordSize" value="word" />Word<br />
                         <input type="radio" name="wordSize" value="byte" />Byte
-                    </form>                
-            </div>
-            <div id="butons">                
-                <table id="bt_table">
-                    <tr>
-                        <td><button disabled></button></td>
-                        <td><button>Mod</button></td>
-                        <td><button disabled>A</button></td>
-                        <td><button>MC</button></td>
-                        <td><button>MR</button></td>
-                        <td><button>MS</button></td>
-                        <td><button>M+</button></td>
-                        <td><button>M-</button></td>
-                    </tr>
+                    </form>
+                </div>
+                <div id="butons">
+                    <table id="bt_table" aria-label="Calculator buttons">
+                        <tr>
+                            <td><button disabled></button></td>
+                            <td><button>Mod</button></td>
+                            <td><button disabled>A</button></td>
+                            <td><button>MC</button></td>
+                            <td><button>MR</button></td>
+                            <td><button>MS</button></td>
+                            <td><button>M+</button></td>
+                            <td><button>M-</button></td>
+                        </tr>
 
-                    <tr>
-                        <td><button>(</button></td>
-                        <td><button>)</button></td>
-                        <td><button disabled>B</button></td>
-                        <td><button>←</button></td>
-                        <td><button class="current">CE</button></td>
-                        <td><button>C</button></td>
-                        <td><button>±</button></td>
-                        <td><button disabled>√</button></td>
-                    </tr>
+                        <tr>
+                            <td><button>(</button></td>
+                            <td><button>)</button></td>
+                            <td><button disabled>B</button></td>
+                            <td><button>←</button></td>
+                            <td><button class="current">CE</button></td>
+                            <td><button>C</button></td>
+                            <td><button>±</button></td>
+                            <td><button disabled>√</button></td>
+                        </tr>
 
-                    <tr>
-                        <td><button>RoL</button></td>
-                        <td><button>RoR</button></td>
-                        <td><button disabled>C</button></td>
-                        <td><button class="num">7</button></td>
-                        <td><button class="num">8</button></td>
-                        <td><button class="num">9</button></td>
-                        <td><button>/</button></td>
-                        <td><button disabled>%</button></td>
-                    </tr>
+                        <tr>
+                            <td><button>RoL</button></td>
+                            <td><button>RoR</button></td>
+                            <td><button disabled>C</button></td>
+                            <td><button class="num">7</button></td>
+                            <td><button class="num">8</button></td>
+                            <td><button class="num">9</button></td>
+                            <td><button>/</button></td>
+                            <td><button disabled>%</button></td>
+                        </tr>
 
-                    <tr>
-                        <td><button>Or</button></td>
-                        <td><button>Xor</button></td>
-                        <td><button disabled>D</button></td>
-                        <td><button class="num">4</button></td>
-                        <td><button class="num">5</button></td>
-                        <td><button class="num">6</button></td>
-                        <td><button>*</button></td>
-                        <td><button disabled>1/x</button></td>
-                    </tr>
+                        <tr>
+                            <td><button>Or</button></td>
+                            <td><button>Xor</button></td>
+                            <td><button disabled>D</button></td>
+                            <td><button class="num">4</button></td>
+                            <td><button class="num">5</button></td>
+                            <td><button class="num">6</button></td>
+                            <td><button>*</button></td>
+                            <td><button disabled>1/x</button></td>
+                        </tr>
 
-                    <tr>
-                        <td><button>Lsh</button></td>
-                        <td><button>Rsh</button></td>
-                        <td><button disabled>E</button></td>
-                        <td><button class="num">1</button></td>
-                        <td><button class="num">2</button></td>
-                        <td><button class="num">3</button></td>
-                        <td><button>-</button></td>
-                        <td rowspan="2"><button>=</button></td>
-                    </tr>
+                        <tr>
+                            <td><button>Lsh</button></td>
+                            <td><button>Rsh</button></td>
+                            <td><button disabled>E</button></td>
+                            <td><button class="num">1</button></td>
+                            <td><button class="num">2</button></td>
+                            <td><button class="num">3</button></td>
+                            <td><button>-</button></td>
+                            <td rowspan="2"><button>=</button></td>
+                        </tr>
 
-                    <tr>
-                        <td><button>Not</button></td>
-                        <td><button>And</button></td>
-                        <td><button disabled>F</button></td>
-                        <td colspan="2"><button class="num">0</button></td>
-                        <td><button disabled>.</button></td>
-                        <td><button>+</button></td>
-                    </tr>
-                </table>
+                        <tr>
+                            <td><button>Not</button></td>
+                            <td><button>And</button></td>
+                            <td><button disabled>F</button></td>
+                            <td colspan="2"><button class="num">0</button></td>
+                            <td><button disabled>.</button></td>
+                            <td><button>+</button></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
-	</div>
 </body>
+
 </html>

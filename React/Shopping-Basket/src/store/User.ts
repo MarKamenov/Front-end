@@ -3,7 +3,7 @@ import { userResponse } from '../data/user';
 export default class UserStore {
 	@observable public username: string = '';
 
-	constructor() {
+	public init() {
 		this.getUser();
 	}
 
@@ -13,6 +13,7 @@ export default class UserStore {
 			const user = await userResponse().then(user => user);
 			this.username = user.name;
 		} catch (e) {
+			console.error(e);
 			throw e;
 		}
 	}

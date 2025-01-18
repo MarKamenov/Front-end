@@ -1,22 +1,20 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import * as photo from "../assets/photo.png"
+import * as photo from '../assets/photo.png';
 
 export interface IPhotoViewerProps {
 	className?: string;
 }
 
 class UnstyledPhotoViewer extends React.Component<IPhotoViewerProps> {
-	constructor(props: IPhotoViewerProps) {
-		super(props);
-	}
-
 	public render() {
 		return (
-		<div className={this.props.className}>
-		<div className="content"><img role="img" src={photo} alt="landing-page-photo"/></div>
-	</div>
-		)
+			<div className={this.props.className}>
+				<div className="content">
+					<img src={photo} alt="landing-page-photo" />
+				</div>
+			</div>
+		);
 	}
 }
 
@@ -31,7 +29,7 @@ const PhotoView = styled(UnstyledPhotoViewer)`
 	left: 0;
 	right: 0;
 	top: 0;
-	
+
 	.content {
 		margin: 5px;
 		overflow: auto;

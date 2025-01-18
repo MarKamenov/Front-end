@@ -1,25 +1,25 @@
-var app = app || {};
+const app = app || {};
 
-(function() {
-    var baseUrl = 'https://api.parse.com/1/',
+(function () {
+    const baseUrl = 'https://api.parse.com/1/',
         ajaxRequester = app.ajaxRequester.get(),
         data = app.data.get(baseUrl, ajaxRequester),
         controller = app.controller.get(data);
-    	controller.attachEventHandlers();
+    controller.attachEventHandlers();
 
-    app.router = Sammy(function() {
+    app.router = Sammy(function () {
         var sel = '#wrapper';
 
-        this.get('#/', function() {
+        this.get('#/', function () {
             controller.loadHome(sel);
         });
-        this.get('#/login', function() {
+        this.get('#/login', function () {
             controller.loadLogin(sel);
         });
-        this.get('#/register', function() {
+        this.get('#/register', function () {
             controller.loadRegister(sel);
         });
-        this.get('#/bookmarks', function() {
+        this.get('#/bookmarks', function () {
             controller.loadBookmarks(sel);
         });
     });

@@ -6,12 +6,17 @@ export default class FurnitureStore {
 	@observable public quantity: number = 1;
 	@observable public selectedItems: IFurnitureResponse[] = [];
 
+	public init() {
+		this.fetchFurniture();
+	}
+
 	@action
 	public async fetchFurniture() {
 		try {
 			const response = await furnitureResponse().then(furniture => (this.list = furniture));
 			this.list = response;
 		} catch (e) {
+			console.error(e);
 			throw e;
 		}
 	}

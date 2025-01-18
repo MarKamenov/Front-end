@@ -1,4 +1,4 @@
-var app = app || {};
+const app = app || {};
 
 app.requester = (function () {
     function Requester(appId, appSecret, baseUrl) {
@@ -8,27 +8,27 @@ app.requester = (function () {
     }
 
     Requester.prototype.get = function (url, useSession) {
-        var headers = getHeaders.call(this, false, useSession);
+        const headers = getHeaders.call(this, false, useSession);
         return makeRequest('GET', url, headers, null);
     };
 
     Requester.prototype.post = function (url, data, useSession) {
-        var headers = getHeaders.call(this, data, useSession);
+        const headers = getHeaders.call(this, data, useSession);
         return makeRequest('POST', url, headers, data);
     };
 
     Requester.prototype.put = function (url, data, useSession) {
-        var headers = getHeaders.call(this, data, useSession);
+        const headers = getHeaders.call(this, data, useSession);
         return makeRequest('PUT', url, headers, data);
     };
 
     Requester.prototype.remove = function (url, useSession) {
-        var headers = getHeaders.call(this, false, useSession);
+        const headers = getHeaders.call(this, false, useSession);
         return makeRequest('DELETE', url, headers, null);
     };
 
     function makeRequest(method, url, headers, data) {
-        var defer = Q.defer();
+        const defer = Q.defer();
 
         $.ajax({
             method: method,
@@ -47,7 +47,7 @@ app.requester = (function () {
     }
 
     function getHeaders(isJSON, useSession) {
-        var headers = {},
+        let headers = {},
             token;
 
         if (isJSON) {

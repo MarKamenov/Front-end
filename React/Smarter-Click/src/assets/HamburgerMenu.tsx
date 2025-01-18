@@ -1,11 +1,11 @@
 import * as React from 'react';
 
- interface ISvgIconProps {
+interface ISvgIconProps {
 	className?: string;
 	color?: string;
 }
 
-const HamburgerMenu:React.SFC<ISvgIconProps> = ({ color = '#EDF3F9' }) => (
+const HamburgerMenu: React.SFC<ISvgIconProps> = ({ className, color = '#EDF3F9' }) => (
 	<svg viewBox="0 0 17 12">
 		<g id="Design" stroke={color} strokeWidth="1" fill={color} fillRule="evenodd">
 			<g id="19.-Desktop-1440px-Users-Table-/-Snackbar" transform="translate(-15.973053, -18.000000)">

@@ -1,53 +1,52 @@
-body
-    {
-        background-color:#f0f8ff;
-    }        
-table
-    {
-        border-collapse:collapse;
-		margin:50px auto;
-		width:700px
-    }
-td  
-    {
-        border-left:1px solid #808080;
-		padding:10px;
-    }
-td:first-child
-    {
-        border-left:none;
-    }
-td:last-child{
-	width:100px;
+body {
+    background-color: #f0f8ff;
 }
 
-tr:nth-child(even)
-    {
-        background-color:#fff;
-    }
-tr:nth-child(odd)
-	{
-		background-color: #ececd8;
-	}
-tr:nth-child(1)
-	{
-		color: #fff;
-		background-color:#5dbe08;
-		border-bottom:1px solid #808080;
-	}
-tr:last-child
-	{
-		border-bottom:1px solid #808080;
-	}
-input[type=checkbox]
-    {
-	    box-shadow:1px 1px 1px black inset;
-	    background-color:#f3f3f3;
-		width: 20px;
-        height: 20px;
-    }
-img
-    {
-        vertical-align:bottom;
-		margin-right:5px;
-    }
+table {
+    border-collapse: collapse;
+    margin: 50px auto;
+    width: 700px
+}
+
+td {
+    border-left: 1px solid #808080;
+    padding: 10px;
+}
+
+td:first-child {
+    border-left: none;
+}
+
+td:last-child {
+    width: 100px;
+}
+
+tr:nth-child(even) {
+    background-color: #fff;
+}
+
+tr:nth-child(odd) {
+    background-color: #ececd8;
+}
+
+tr:nth-child(1) {
+    color: #fff;
+    background-color: #5dbe08;
+    border-bottom: 1px solid #808080;
+}
+
+tr:last-child {
+    border-bottom: 1px solid #808080;
+}
+
+input[type=checkbox] {
+    box-shadow: 1px 1px 1px black inset;
+    background-color: #f3f3f3;
+    width: 20px;
+    height: 20px;
+}
+
+img {
+    vertical-align: bottom;
+    margin-right: 5px;
+}

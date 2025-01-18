@@ -1,4 +1,4 @@
-var app = app || {};
+const app = app || {};
 
 app.notySuccessMessage = function (msg) {
     noty({

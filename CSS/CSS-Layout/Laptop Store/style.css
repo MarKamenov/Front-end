@@ -1,90 +1,109 @@
-*{
-    margin:0;
-	padding:0;
+* {
+	margin: 0;
+	padding: 0;
 }
-body{
-    background-color:#f0f8ff;
-	font-family:Arial,tahoma,sans-serif;
+
+body {
+	background-color: #f0f8ff;
+	font-family: Arial, tahoma, sans-serif;
 }
-.container{
-    border:2px solid black;
-	border-radius:7px;
-	background-color:#fff;
-	width:850px;
-	height:495px;
-	margin:20px auto;
+
+.container {
+	border: 2px solid black;
+	border-radius: 7px;
+	background-color: #fff;
+	width: 850px;
+	height: 495px;
+	margin: 20px auto;
 }
-header{
-    padding:5px 0;
+
+header {
+	padding: 5px 0;
 }
-nav{
-    text-align:center;
+
+nav {
+	text-align: center;
 }
+
 nav ul li {
-    display:inline-block;
-	padding:1px;
+	display: inline-block;
+	padding: 1px;
 }
-nav ul li a{
-    color: #05B4F1;
-	text-align:center;
-	font-weight:bold;
+
+nav ul li a {
+	color: #05B4F1;
+	text-align: center;
+	font-weight: bold;
 }
-hr{
-    width:95%;
-	border-color:black;
-	margin:0 auto;
+
+hr {
+	width: 95%;
+	border-color: black;
+	margin: 0 auto;
 }
-section{
-    width: 547px;
-    border: 2px solid #000000;
-    padding: 3px;
-    margin: 10px;
-    float: left;
+
+section {
+	width: 547px;
+	border: 2px solid #000000;
+	padding: 3px;
+	margin: 10px;
+	float: left;
 }
-fieldset{
-    float:left;
-    width: 260px;
-	margin:3px;
-	text-align:right;
-	border:2px solid black;
+
+fieldset {
+	float: left;
+	width: 260px;
+	margin: 3px;
+	text-align: right;
+	border: 2px solid black;
 }
-fieldset > p:first-of-type {
-    margin-top:20px;
-	padding-bottom:5px;
+
+fieldset>p:first-of-type {
+	margin-top: 20px;
+	padding-bottom: 5px;
 }
-img{
-    width:120px;
-    height:70px;
-	float:left;
-	margin:5px;
+
+img {
+	width: 120px;
+	height: 70px;
+	float: left;
+	margin: 5px;
 }
-legend{
-    text-align:center;
-	padding:3px;
+
+legend {
+	text-align: center;
+	padding: 3px;
 }
-p{
-    padding-right:15px;
-	float:right;
+
+p {
+	padding-right: 15px;
+	float: right;
 }
-.clearfix{
-    clear:both;
+
+.clearfix {
+	clear: both;
 }
-aside{
-	float:left;
-	padding-left:10px;
+
+aside {
+	float: left;
+	padding-left: 10px;
 }
-aside form{
-    margin-top:65px;
+
+aside form {
+	margin-top: 65px;
 }
+
 input[type="range"] {
-    width: 200px;
-	margin-bottom:25px;
-	margin-top:15px;
+	width: 200px;
+	margin-bottom: 25px;
+	margin-top: 15px;
 }
+
 input[type="range"]:first-of-type,
-input[type="range"]:nth-of-type(2){
-	margin-left:10px;
+input[type="range"]:nth-of-type(2) {
+	margin-left: 10px;
 }
-aside form label{
-	font-size:26px;
+
+aside form label {
+	font-size: 26px;
 }

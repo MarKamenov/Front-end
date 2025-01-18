@@ -8,7 +8,7 @@ export class Root {
 	public ui = new UI();
 
 	constructor() {
-		Object.keys(this).forEach(storeName => this[storeName].init && this[storeName].init());
+		Object.keys(this).forEach(storeName => this[storeName].init());
 	}
 }
 

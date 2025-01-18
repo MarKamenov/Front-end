@@ -1,12 +1,12 @@
-var app = app || {};
+const app = app || {};
 
-app.data = (function() {
+app.data = (function () {
     function Data(baseUrl, ajaxRequester) {
         this.users = new Users(baseUrl, ajaxRequester);
         this.bookmarks = new Bookmarks(baseUrl, ajaxRequester);
     }
-    var credentials = (function() {
-        var headers = {
+    const credentials = (function () {
+        const headers = {
             'X-Parse-Application-Id': 'fE3pqGmdD8hKzNe2d1EKTSiarVHdh36uZZuO9nt8',
             'X-Parse-REST-API-Key': 'Z7ZsZRRkYT5Caq20M3aqBlHZMFL6CQ8JrgnSI4Dc',
             'X-Parse-Session-Token': getSessionToken()
@@ -40,63 +40,63 @@ app.data = (function() {
         }
     })();
     //////////USERS//////////////
-    var Users = (function(arguments) {
+    const Users = (function (arguments) {
         function Users(baseUrl, ajaxRequester) {
             this._serviceUrl = baseUrl;
             this._ajaxRequester = ajaxRequester;
             this._headers = credentials.getHeaders();
         }
 
-        Users.prototype.login = function(username, password) {
-            var url = this._serviceUrl + 'login?username=' + username + '&password=' + password;
-            return this._ajaxRequester.get(url, this._headers).then(function(data) {
+        Users.prototype.login = function (username, password) {
+            const url = this._serviceUrl + 'login?username=' + username + '&password=' + password;
+            return this._ajaxRequester.get(url, this._headers).then(function (data) {
                 credentials.setSessionToken(data.sessionToken);
                 credentials.setUsername(data.username);
                 return data;
             });
         }
-        Users.prototype.register = function(username, password) {
-            var user = {
+        Users.prototype.register = function (username, password) {
+            const user = {
                 username: username,
                 password: password
             };
-            var url = this._serviceUrl + 'users';
+            const url = this._serviceUrl + 'users';
             return this._ajaxRequester.post(url, user, this._headers)
-                .then(function(data) {
+                .then(function (data) {
                     credentials.setSessionToken(data.sessionToken);
                     return data;
                 });
         }
-        Users.prototype.signout = function(){
+        Users.prototype.signout = function () {
             localStorage.removeItem('sessionToken');
             localStorage.removeItem('username');
         }
         return Users;
     })();
     ///////////////BOOKMARKS////////////////
-    var Bookmarks = (function(argument) {
+    const Bookmarks = (function (argument) {
         function Bookmarks(baseUrl, ajaxRequester) {
             this._serviceUrl = baseUrl + 'classes/Bookmark';
             this._ajaxRequester = ajaxRequester;
             this._headers = credentials.getHeaders();
         };
-        Bookmarks.prototype.getAll = function() {
+        Bookmarks.prototype.getAll = function () {
             return this._ajaxRequester.get(this._serviceUrl, this._headers);
         };
-        Bookmarks.prototype.add = function(bookmark) {
+        Bookmarks.prototype.add = function (bookmark) {
             return this._ajaxRequester.post(this._serviceUrl, bookmark, this._headers);
         };
-        Bookmarks.prototype.getById = function(objectId) {
+        Bookmarks.prototype.getById = function (objectId) {
             return this._ajaxRequester.get(this._serviceUrl + '/' + objectId, this._headers);
         }
-        Bookmarks.prototype.delete = function(objectId) {
-            var url = this._serviceUrl + '/' + objectId;
+        Bookmarks.prototype.delete = function (objectId) {
+            const url = this._serviceUrl + '/' + objectId;
             return this._ajaxRequester.delete(url, this._headers);
         }
         return Bookmarks;
     })();
     return {
-        get: function(baseUrl, ajaxRequester) {
+        get: function (baseUrl, ajaxRequester) {
             return new Data(baseUrl, ajaxRequester);
         }
     }

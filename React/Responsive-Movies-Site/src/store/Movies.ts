@@ -3,8 +3,8 @@ import * as ApiService from '../services/apiServices'
 import { IMovieResponse } from '../types'
 
 export default class MoviesStore {
-	@observable public list:IMovieResponse[] = [];
-	@observable public total:number;
+	@observable public list: IMovieResponse[] = [];
+	@observable public total: number;
 
 	public init() {
 		this.fetchMovies();
@@ -14,21 +14,23 @@ export default class MoviesStore {
 	public async fetchMovies() {
 		try {
 			const response = await ApiService.getMovies();
-			const {total_results, results} = response
+			const { total_results, results } = response
 			this.total = total_results
 			this.list = results;
 		} catch (e) {
+			console.error(e);
 			throw e;
 		}
 	}
 
 	@action
-	public async searchMovies(movie:string) {
+	public async searchMovies(movie: string) {
 		try {
-			const response = await ApiService.searchMovies(movie);	
-			const{results} = response
+			const response = await ApiService.searchMovies(movie);
+			const { results } = response
 			this.list = results;
 		} catch (e) {
+			console.error(e);
 			throw e;
 		}
 	}

@@ -10,7 +10,7 @@ interface IBasketProps {
 @inject('furniture')
 @observer
 class Basket extends React.Component<IBasketProps> {
-	private tax: number = 0.15;
+	private readonly tax: number = 0.15;
 
 	constructor(props: IBasketProps) {
 		super(props);
@@ -32,7 +32,7 @@ class Basket extends React.Component<IBasketProps> {
 			<Box p={3} className={this.props.className}>
 				<Flex justifyContent="space-between">
 					<Box>Added items:</Box>
-					<Box>{itemsAdded ? itemsAdded : 0}</Box>
+					<Box>{itemsAdded || 0}</Box>
 				</Flex>
 				<Flex justifyContent="space-between">
 					<Box>total price:</Box>

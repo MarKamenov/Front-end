@@ -1,43 +1,42 @@
 'use strict'
 
-var ajaxRequester = (function(){
+const ajaxRequester = (function () {
 
-	var baseUrl = "https://api.parse.com/1/";
+    const baseUrl = "https://api.parse.com/1/";
 
-	var headers = {
-		 "X-Parse-Application-Id": "C0NsUSFtKPOq4TaGeqMf62XI6IG7HXydrpkjvSQX",
+    const headers = {
+        "X-Parse-Application-Id": "C0NsUSFtKPOq4TaGeqMf62XI6IG7HXydrpkjvSQX",
         "X-Parse-REST-API-Key": "0SL1EbtpvbP2QajiY0ENXKAjQkYLOmlrkgbNnBgN"
-	};
+    };
 
-	function login(username,password,success,error){
-		 $.ajax({
+    const login = function (username, password, success, error) {
+        $.ajax({
             method: "GET",
             headers: headers,
             url: baseUrl + "login",
-            data: {username: username, password: password},
+            data: { username: username, password: password },
             success: success,
             error: error
         });
-	}
+    }
 
-     function register(username, password, success, error) {
-         $.ajax({
+    const register = function (username, password, success, error) {
+        $.ajax({
             method: "POST",
             headers: headers,
             url: baseUrl + "users",
-            data: JSON.stringify({username: username, password: password}),
+            data: JSON.stringify({ username: username, password: password }),
             success: success,
             error: error
         });
     }
-    function getHeadersWithToken(sessionToken){
-        var headersWithToken = JSON.parse(JSON.stringify(headers));
+    const getHeadersWithToken = function (sessionToken) {
+        const headersWithToken = JSON.parse(JSON.stringify(headers));
         headersWithToken['X-Parse-Session-Token'] = sessionToken;
         return headersWithToken;
     }
-    function getBookmarks(sessionToken,success,error){
-        var headersWithToken = 
-        getHeadersWithToken(sessionToken);
+    const getBookmarks = function (sessionToken, success, error) {
+        const headersWithToken = getHeadersWithToken(sessionToken);
         $.ajax({
             method: "GET",
             headers: headersWithToken,
@@ -46,9 +45,9 @@ var ajaxRequester = (function(){
             error: error
         });
     }
-    function createBookmark (title, url, userId, success, error){
-         var bookmark = {title: title, url: url, ACL : {}};
-        bookmark.ACL[userId] = {"write": true, "read": true};
+    const createBookmark = function (title, url, userId, success, error) {
+        const bookmark = { title: title, url: url, ACL: {} };
+        bookmark.ACL[userId] = { "write": true, "read": true };
         $.ajax({
             method: "POST",
             headers: headers,
@@ -58,8 +57,8 @@ var ajaxRequester = (function(){
             error: error
         });
     }
-    function deleteBookmark(sessionToken,bookmarkId,success, error){
-        var headersWithToken = getHeadersWithToken(sessionToken);
+    const deleteBookmark = function (sessionToken, bookmarkId, success, error) {
+        const headersWithToken = getHeadersWithToken(sessionToken);
         $.ajax({
             method: "DELETE",
             headers: headersWithToken,
@@ -69,7 +68,7 @@ var ajaxRequester = (function(){
         });
 
     }
-	 return {
+    return {
         login: login,
         register: register,
         getBookmarks: getBookmarks,

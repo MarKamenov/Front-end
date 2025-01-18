@@ -1,105 +1,125 @@
-*{
-    margin:0;
-	padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
-body {    
-    background-color:#f0f8ff;
+
+body {
+    background-color: #f0f8ff;
     font-size: 13px;
-    font-family: Arial Narrow, calibri sans-serif;    
+    font-family: "Arial Narrow", calibri, sans-serif;
 }
-#container{
-    width:790px;
-	margin:10px auto;
-	border:1px solid black;
-	background-color: #F1F1F1;
-	padding:2px;
-	/*overflow:hidden; clear the float*/
+
+#container {
+    width: 790px;
+    margin: 10px auto;
+    border: 1px solid black;
+    background-color: #F1F1F1;
+    padding: 2px;
+    /*overflow:hidden; clear the float*/
 }
-.clearfix:after { 
-   content: "."; 
-   visibility: hidden; 
-   display: block; 
-   height: 0; 
-   clear: both;
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
 }
+
 header h3 a#home {
-    text-decoration:none;
-	font-variant:small-caps;
-	color:#232323;
-	letter-spacing:1px;
-	text-shadow:1px 1px 1px #fff;
-	padding-left:3px;
+    text-decoration: none;
+    font-variant: small-caps;
+    color: #232323;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #fff;
+    padding-left: 3px;
 }
-header h3:before{
-    content:url("img/home.png");
+
+header h3:before {
+    content: url("img/home.png");
 }
- ul{
-    list-style-type:none;
-	margin-top:5px;
- }
-nav#left-side ul li a{
-    text-decoration:none;
-	color:#232323;
-} 
-nav#left-side ul > li {
-    color:#981e1c;
+
+ul {
+    list-style-type: none;
+    margin-top: 5px;
 }
-body div.left{
+
+nav#left-side ul li a {
+    text-decoration: none;
+    color: #232323;
+}
+
+nav#left-side ul>li {
+    color: #981e1c;
+}
+
+body div.left {
     float: left;
     width: 17%;
     margin-right: -14px;
 }
-main{
+
+main {
     float: left;
     width: 66%;
     background-color: white;
     border: 2px solid #A2A2A2;
     padding: 4px;
-	}
+}
+
 main header h1 {
     margin-top: 16px;
     margin-bottom: 10px;
 }
+
 main hr {
     height: 1px;
     background-color: #A2A2A2;
-	margin:2px 0 2px;
+    margin: 2px 0 2px;
 }
-main article h3{
+
+main article h3 {
     background-color: #909090;
     color: white;
     text-indent: 4px;
 }
+
 article div#imageContainer {
     float: left;
     margin-right: 10px;
 }
+
 main article a {
     color: #981e1c;
     display: block;
     margin-top: 10px;
     margin-bottom: 3px;
-	padding:5px;
+    padding: 5px;
 }
+
 main article p {
     margin-top: 10px;
 }
-main article nav a{
-    text-decoration:none;
-    border: 1px solid black; 
-    display:inline-block;
+
+main article nav a {
+    text-decoration: none;
+    border: 1px solid black;
+    display: inline-block;
     width: 100px;
-    text-align: center;	
-	padding:1px 5px;
+    text-align: center;
+    padding: 1px 5px;
 }
-hr#last-line{
-    margin-bottom:30px;
+
+hr#last-line {
+    margin-bottom: 30px;
 }
-aside {    
+
+aside {
     float: right;
-    width: 17%; 
-    margin-left:0;	
+    width: 17%;
+    margin-left: 0;
 }
+
 aside div {
     border: 2px solid #A2A2A2;
     margin-bottom: 1px;
@@ -107,24 +127,28 @@ aside div {
     background-color: white;
     padding-bottom: 5px;
 }
+
 aside form input[type=text] {
     width: 100px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-aside button{
+
+aside button {
     background-image: url("img/button.png");
-	font-weight: 900;
-	color: #26c7ff;
-	width:100px;
-	height:30px;
-	border:none;
-	margin-top:1px;
+    font-weight: 900;
+    color: #26c7ff;
+    width: 100px;
+    height: 30px;
+    border: none;
+    margin-top: 1px;
 }
+
 aside div a {
-   color:#981e1c;
-   font-weight:bolder;
-   }
+    color: #981e1c;
+    font-weight: bolder;
+}
+
 aside div h3 {
     background-color: #909090;
     color: white;
